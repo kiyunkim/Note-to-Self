@@ -16,6 +16,13 @@ This is a normal paragraph text.
   - As well as an asterisk
 * Both will come out as a bullet point
 
+
+<details>
+  <summary>Title for information</summary>
+
+  Information goes in here  
+</details>
+
 ## Refs:
 [Github](https://guides.github.com/features/mastering-markdown/)
 
