@@ -15,3 +15,8 @@ This is a normal paragraph text.
 - Dashes work
   - As well as an asterisk
 * Both will come out as a bullet point
+
+## Refs:
+[Github](https://guides.github.com/features/mastering-markdown/)
+
+[https://daringfireball.net/projects/markdown/syntax#span](https://daringfireball.net/projects/markdown/syntax#span)
