@@ -25,8 +25,7 @@ This is a normal paragraph text.
 </details>
 
 ## Refs:
-[Github](https://guides.github.com/features/mastering-markdown/)
-
-[https://daringfireball.net/projects/markdown/syntax#span](https://daringfireball.net/projects/markdown/syntax#span)
+- [Github's Mastering Makrdown](https://guides.github.com/features/mastering-markdown/)
+- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here.wiki.git)
 
 <!--- testing a comment -->
