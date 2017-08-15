@@ -18,6 +18,7 @@ console.warn('warning!');
 console.error('error!');
 
 Math.random(); // generates random number between 0 and 1
+Math.round(); // round to a whole number
 ```
 
 ## Primitive Data Types
