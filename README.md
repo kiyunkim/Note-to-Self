@@ -1,5 +1,5 @@
 
-# Mastering Markdown
+# Markdown
 <h1 align="center">Heading1 Centered</h1>
 This is a normal paragraph text.
 
