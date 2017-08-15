@@ -32,8 +32,14 @@ AngularJS is a JavaScript web framework aimed to make web apps simple to build a
   - test.js
   </details>
 
----
 
+## Vocab
+
+- Module
+- Directive
+- Scope
+
+---
 
 
 ```javascript
@@ -42,14 +48,13 @@ var app = angular.module("myApp",[]);
 Create a new **module** called ```myApp``` in _js/app.js_  
 A **module** contains the different components of an AngularJS app.
 
-
-In **index.html**:
-
 ```html
 <body ng-app="myApp">  
   ..
 </body>
 ```
+Add ```ng-app="myApp"``` to the ```<body>``` in _index.html_.  
+```ng-app``` is a **directive** that tells AngularJS that the ```myApp``` **module** will live within the ```<body>``` element, termed the application's **scope.** In other words, we used the ```ng-app``` **directive** to define the application **scope**.
 
 
 
