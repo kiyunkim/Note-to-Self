@@ -11,9 +11,10 @@
 ## Code reference
 
 ```javascript
+prompt("Enter your name");
 
-console.log("hello world"); // logs the string to the console
-console.warn('warning!'); // warning is echoed out in the console
+console.log("hello world");
+console.warn('warning!'); 
 console.error('error!');
 
 Math.floor(); // generates random number between 0 and 1
@@ -45,3 +46,8 @@ A value's **type** tells us what kind of 'thing' it is.
 - Use special keyword `var` to name the variable (use CAML case), and then assign the variable a value.
 
 **Keywords and Reserved words**: `break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, implements, in, instanceof, interface, let, new, null, package, private, protected, public, return, static, switch, this, throw, true, try, typeof, var, void, while, with, yield`
+
+## Control Flow
+
+- Using **control flow** allows us to run code only under certain conditions. 
+- If/Else statements are one of the most common types of control flow. They allow us to run code only **if** a certain condition is first met, and we can tell our code to do something **else** if that condition is not met.
