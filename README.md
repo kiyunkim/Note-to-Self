@@ -1,6 +1,7 @@
 
 # Markdown
 <h1 align="center">Heading1 Centered</h1>
+
 This is a normal paragraph text.
 
 **This is how to bold.**
@@ -8,6 +9,8 @@ This is a normal paragraph text.
 *This is how to emphasize.*
 
 [This is a link.](http://google.com)
+
+---
 
 1. Lists
 2. Are
@@ -17,8 +20,15 @@ This is a normal paragraph text.
   - As well as an asterisk
 * Both will come out as a bullet point
 
-   hello
+   Paragraph below bullet point
+   
+___
 
+This is a paragraph  
+Add two trailing spaces in the line before for a linebreak  
+Another line break
+
+***
 
 <details>
   <summary>Title for information</summary>
