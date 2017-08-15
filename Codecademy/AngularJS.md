@@ -34,11 +34,13 @@ AngularJS is a JavaScript web framework aimed to make web apps simple to build a
 
 ---
 
+
+
 ```javascript
 var app = angular.module("myApp",[]);
 ```
-Create a new **module** called ```myApp``` in _js/app.js_
-> A **module** contains the different components of an AngularJS app.
+Create a new **module** called ```myApp``` in _js/app.js_  
+A **module** contains the different components of an AngularJS app.
 
 
 In **index.html**:
@@ -48,6 +50,17 @@ In **index.html**:
   ..
 </body>
 ```
+
+
+
+
+
+
+\
+\
+\
+\
+
 
 In **js/controllers/MainController.js**
 
