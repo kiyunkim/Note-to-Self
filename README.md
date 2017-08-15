@@ -1,6 +1,6 @@
 
 # Markdown
-<h1 align="center">Heading1 Centered</h1>
+<h2 align="center">H2 Centered</h2>
 
 This is a normal paragraph text.
 
