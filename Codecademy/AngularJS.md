@@ -40,7 +40,7 @@ Type the following in **js/app.js**
 var app = angular.module("myApp",[]);
 ```
 
-Type in **index.html**
+In **index.html**:
 
 ```html
 <body ng-app="myApp">  
@@ -48,10 +48,23 @@ Type in **index.html**
 </body>
 ```
 
-Type in **js/controllers/MainController.js**
+In **js/controllers/MainController.js**
 
 ```javascript
 app.controller('MainController', ['$scope', function($scope) { 
   $scope.title = 'Top Sellers in Books'; 
 }]);
 ```
+
+Update **index.html**:
+
+```html
+<body ng-app="myApp">  
+  <div class="main" ng-controller="MainController">
+    <h1>{{ title }}</h1>
+  </div>
+</body>
+```
+
+```{{ title }}``` heading will appear as 'Top Sellers in Books'
+
