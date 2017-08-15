@@ -4,11 +4,11 @@
 - Primarily client side, does not have to run through a server (like PHP or .NET) to work - only needs the browser in order to run
 - Fully featured language but originally designed as a **scripting language** (language used to communicate with an existing application)
 
-## General Notes
+### General Notes
 
 - Less lines = smaller file
 
-## Code reference
+### Code reference
 
 ```javascript
 prompt("Enter your name");
@@ -17,7 +17,7 @@ console.log("hello world");
 console.warn('warning!'); 
 console.error('error!');
 
-Math.floor(); // generates random number between 0 and 1
+Math.random(); // generates random number between 0 and 1
 ```
 
 ## Primitive Data Types
