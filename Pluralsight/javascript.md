@@ -16,7 +16,7 @@ console.log("hello world"); // logs the string to the console
 console.warn('warning!'); // warning is echoed out in the console
 console.error('error!');
 
-
+Math.floor(); // generates random number between 0 and 1
 ```
 
 ## Primitive Data Types
@@ -32,12 +32,16 @@ console.error('error!');
 Any **expression** in Javascript will return a value (`2 + 2` returns `4`), and that value will have a type.  
 A value's **type** tells us what kind of 'thing' it is.
 
-`2 + "2"` returns `22` -- it is concatenating the two values and returns a string
+`2 + "2"` returns `"22"` -- it is concatenating the two values and returns a string
 
 `typeof(10 > 2)` returns `boolean`  
-`typeof(a)` returns `undefined` since value 'a' has not been defined
+`typeof(a)` returns `ReferenceError: undefined` since value 'a' has not been defined
 
 
-Variables
+## Variables 
 
-- 
+- Variables allow us to store a reference to a value to be referred to later. When we create a new variable, we are **declaring** it, which means our code now recognizes it as a 'thing.' 
+- Variables cannot start with a number, contain spaces or punctuation marks (except `_` or `$`), or use a word that is already reserved for something else.
+- Use special keyword `var` to name the variable (use CAML case), and then assign the variable a value.
+
+**Keywords and Reserved words**: `break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, implements, in, instanceof, interface, let, new, null, package, private, protected, public, return, static, switch, this, throw, true, try, typeof, var, void, while, with, yield`
