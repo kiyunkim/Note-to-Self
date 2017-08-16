@@ -7,11 +7,14 @@
 ### General Notes
 
 - Less lines = smaller file
+- Modulo symbol `%`
+- `true` = `1`  
+  `false` = `0`
 
 ### Code reference
 
 ```javascript
-var myName = prompt("Enter your name"); // myName's value is what the user puts in the prompt
+prompt("Enter your name"); // returns what is typed into the input
 
 console.log("hello world");
 console.warn('warning!'); 
@@ -50,7 +53,12 @@ A value's **type** tells us what kind of 'thing' it is.
 
 ## Control Flow
 
-- Using **control flow** allows us to run code only under certain conditions. 
+- Using **control flow** allows us to run code only under certain conditions
+- Uses code in a non-linear fashion
 
 #### If/Else
-If/Else statements are one of the most common types of control flow. They allow us to run code only **if** a certain condition is first met, and we can tell our code to do something **else** if that condition is not met.
+- If/Else statements are one of the most common types of control flow. They allow us to run code only **if** a certain condition is first met, and we can tell our code to do something **else** if that condition is not met.
+
+
+#### Switch
+- 
