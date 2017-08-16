@@ -2,7 +2,7 @@
 
 AngularJS is a JavaScript web framework aimed to make web apps simple to build and easy to maintain.
 
-## Files:
+## File list:
 - index.html  
 - <details>
   <summary>css</summary>
@@ -62,25 +62,13 @@ A **module** contains the different components of an AngularJS app.
 **`ng-app`** (`ng` for Angular) is a **directive** that tells AngularJS that the `myApp` **module** will live within the `<body>` element, termed the application's **scope.** In other words, we used the `ng-app` **directive** to define the application **scope**. The `ng-app` allows Angular to take control of where the directive applies, in this case the `<body>`.
 
 
-
-
-
-
-\
-\
-\
-\
-
-
-In **js/controllers/MainController.js**
-
 ```javascript
 app.controller('MainController', ['$scope', function($scope) { 
   $scope.title = 'Top Sellers in Books'; 
 }]);
 ```
+>Insert this code in **js/controllers/MainController.js**
 
-Update **index.html**:
 
 ```html
 <body ng-app="myApp">  
@@ -89,6 +77,7 @@ Update **index.html**:
   </div>
 </body>
 ```
+>Update **index.html**
 
-```{{ title }}``` heading will appear as 'Top Sellers in Books'
+`{{ title }}` heading will appear as 'Top Sellers in Books'
 
