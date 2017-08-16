@@ -45,7 +45,8 @@ AngularJS is a JavaScript web framework aimed to make web apps simple to build a
 ```javascript
 var app = angular.module("myApp",[]);
 ```
-Create a new **module** called `myApp` in _js/app.js_  
+>Create a new **module** called `myApp` in _js/app.js_
+
 A **module** contains the different components of an AngularJS app.
 
 ```html
@@ -53,7 +54,8 @@ A **module** contains the different components of an AngularJS app.
   ..
 </body>
 ```
-Add `ng-app="myApp` to the `<body>` in _index.html_.  
+>Add `ng-app="myApp` to the `<body>` in _index.html_.  
+
 - `ng` stands for Angular
 - Only one `ng-app` directive is allowed per page/DOM
 
