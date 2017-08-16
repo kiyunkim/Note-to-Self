@@ -75,10 +75,14 @@ app.controller('MainController', ['$scope', function($scope) {
 <body ng-app="myApp">  
   <div class="main" ng-controller="MainController">
     <h1>{{ title }}</h1>
+    {{ 20 / 2 }}
   </div>
 </body>
 ```
 >Update **index.html**
 
-`{{ title }}` heading will appear as 'Top Sellers in Books'
+`{{ title }}` heading will appear as 'Top Sellers in Books'.
 
+The double curly braces `{{ }}` are **binding expressions** in Angular, sometimes called mustaches or handlebars. Angular looks for these binding expressions and tries to evaluate the expressions inside.
+
+Binding expressions can also look at data you have retrieved from a web server.
