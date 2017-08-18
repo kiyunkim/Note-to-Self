@@ -61,4 +61,16 @@ A value's **type** tells us what kind of 'thing' it is.
 
 
 #### Switch
-- 
+```javascript
+switch (expressionOrArgument) {
+  case exampleOne:
+    // if expressionOrArgument === exampleOne, this code will run
+    break;
+  case exampleTwo:
+    // if expressionOrArgument === exampleTwo, this code will run
+    break;
+  default:
+    // this code will run if no cases are met
+    break;
+}
+```
