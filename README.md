@@ -3,10 +3,12 @@
 
 <sub>*Notes in this repository is for personal use, and may not contain complete information on each topic.</sub>
 
+&nbsp;
 
 
 <details>
   <summary>Markdown Notes</summary>
+  
   - [Github's Mastering Makrdown](https://guides.github.com/features/mastering-markdown/)
   - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 <!--- testing a comment -->
