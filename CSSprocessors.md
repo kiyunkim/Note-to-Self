@@ -28,21 +28,21 @@ The script will look through the DOM to find LESS files by looking at the rel at
 - It is common to process LESS files on the server
 - Ability to cache
 - Reduces processing time on the client
-- Has server support for Node.js, ASP.NET, Rails, JSP, etc  
-    <details>
-      <summary>Node.js</summary>
+- Has server support for Node.js, ASP.NET, Rails, JSP, etc
+  <details>
+    <summary>Node.js</summary>
 
-    ```node
-    // use Node package manager to install LESS on the server
-    $ npm install less
-    // require LESS as part of the project
-    var less = require('less');
-    // use the LESS class to render content
-    less.render(lessContents, function(e,css) {
-      console.log(css);
-    }
-    ```
-    </details>
+  ```node
+  // use Node package manager to install LESS on the server
+  $ npm install less
+  // require LESS as part of the project
+  var less = require('less');
+  // use the LESS class to render content
+  less.render(lessContents, function(e,css) {
+    console.log(css);
+  }
+  ```
+  </details>
 
 
 ```less
