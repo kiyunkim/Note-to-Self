@@ -44,7 +44,7 @@ The script will look through the DOM to find LESS files by looking at the rel at
   ```
   </details>
 
-
+#### LESS Example
 ```less
 @main-color: pink;
 @heading-color: black;
