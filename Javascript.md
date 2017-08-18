@@ -74,3 +74,18 @@ switch (expressionOrArgument) {
     break;
 }
 ```
+
+### Loop
+- Loops through a block of code until an original condition is no longer true
+
+```javascript
+// print numbers 1 through 10 in the console
+for (i = 0; i <= 10; i++) {
+  // the block of code to run in loop
+  console.log(i);
+}
+```
+- **Initial expression** specified after the `for` keyword within paranthesis.
+  1. Create variable with its value (at i = 0)
+  2. Code runs while this condition is true (i <= 10)
+  3. Update the value after checking it is true (add by 1, i++)
