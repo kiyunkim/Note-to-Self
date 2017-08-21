@@ -156,4 +156,23 @@ color: mix(@color, #246); // mix two colors
   - Node.js
   - ASP.NET iva Plugin (e.g. Chirpy)
   - Rails, JSP, etc
-  
+
+### Variables
+```sass
+$myColor: #ffeedd;
+
+$color: black;
+$unit: 4px; // or 1em or 50%
+$list: arial, sans-serif;
+$complexList: 1px solid #333;
+```
+
+### Operations
+
+```sass
+font-size: 4px + 4;  // add 8px
+font-size: 14px * 2; // multiply  
+color: #fff / 4;  // divide #404040;
+width: (100% / 2 ) + 25%; // use order of operations 75%
+```
+
