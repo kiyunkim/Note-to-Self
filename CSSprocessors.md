@@ -175,4 +175,48 @@ font-size: 14px * 2; // multiply
 color: #fff / 4;  // divide #404040;
 width: (100% / 2 ) + 25%; // use order of operations 75%
 ```
+### Color Functions
 
+```sass
+color: lighten($color, 10%);
+color: darken($color, 10%);
+color: saturate($color, 10%);
+color: desaturate($color, 10%); 
+
+color: fade_in($color, .1);
+color: fade_out($color, .1);
+color: invert($color);
+color: complement($color);
+```
+
+### More Functions
+```sass
+$quoted: quote($sometext);
+$unquoted: unquote($sometext); // remove quotes from variables or other pieces of text in the CSS
+
+$value: if(true, $colorTrue, $colorFalse); // if some value is true, choose the first option; if false choose second option
+
+
+$round: round(3.14);  // round to nearest whole number
+$rndUp: ceil(3.14);   // round up to nearest whole number
+$rndDwn: floor(3.14); // round down to nearest whole number
+$percnt: percentage(.14);  // get percentage
+```
+### String interpolation
+Use the syntax of a pound`#`, with the variable in curly braces to use string values
+```sass
+// can use Ruby/PHP style string insertion
+$root: "/images/";
+
+body {
+  background: url("#{$root}background.jpg");
+  // background: url("/images/background.jpg");
+}
+```
+```sass
+$myClass: "my-class";
+
+.#{$myClass} { // .my-class
+  color: #333;
+}
+```
