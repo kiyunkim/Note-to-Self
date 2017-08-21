@@ -12,6 +12,8 @@ This is where CSS preprocessors or dynamic style sheet languages come in handy (
   - Advanced calculations
   - *Preprocessors results a CSS file after it is processed - it only processes CSS*
 
+---
+
 ## SASS
 - Dynamic Style Sheet Language
   - "Syntactically Awesome StyleSheets"
@@ -168,9 +170,79 @@ body {
 }
 ```
 
+#### `@extend`
+- Extend rules from other rules, or creating inheritance inside of a rule
+- Multiple inheritances from a rule or class works as well
+```sass
+.button {
+  color: black;
+  text-transform: uppercase;
+}
+.submit-button {
+  @extend .button;
+  border: 1px solid #333;
+}
+```
+#### `@mixin`
+- Repeatable sections in CSS code (e.g. `border-radius` or `box-sizing`, which require different prefixes)
+  - Feel like functions: can be called with parameters
+  - But take one or more name/value pair
+  - Accepts parameters, defaults, overloads
+- Define mixin name after `@mixin`, call the mixin with `@include` inside a declaration
+  ```sass
+  @mixin font-large {
+    font: {
+      size: 14px;
+      family: sans-serif;
+      weight: bold;
+    }
+  }
+  h1 {
+    @include font-large;
+  }
+  ```
+- Parameterized mixins:
+  ```sass
+  @mixin round-corners-all($size: 5px) {
+    -wekit-border-radius: $size;
+    -moz-border-radius: $size;
+    border-radius: $size;
+  }
+  .button {
+    @include rounded-corners-all(10px);
+    // or just to use the default: @include rounded-corners-all;
+  }
+  ```
+#### `@function`
+- Create standard code which is used for functional representations
+  ```sass
+  $app_width: 900px;
+  @function column_width($cols) {
+    @return ($app_width / $cols) - ($cols * 5px);
+    // calculate columns' width based on number of columns
+  }
+  .col {
+    width: column_width(2);
+  }
+  ```
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
 
 ## LESS
 
