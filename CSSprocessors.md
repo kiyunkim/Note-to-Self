@@ -5,7 +5,7 @@
 - **Cascading avalanches:** when re-naming an ID, the name has to get replaced everywhere in the CSS 
 
 
-This is where CSS preprocessors ro dynamic style sheet languages come in handy
+This is where CSS preprocessors or dynamic style sheet languages come in handy ([LESS](#less), [SASS](#sass))
   - Variables that is scoped within a rule or at a top global level
   - Reusable components of CSS
   - Clarity in rule cascading
