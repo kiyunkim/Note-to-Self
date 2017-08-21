@@ -69,7 +69,7 @@ The script will look through the DOM to find LESS files by looking at the rel at
 - Can be any unit, color, strings (e.g. font-family), or even complex type (entire value of `border` property)
 
 #### Operations
-```css
+```less
 font-size: 4px + 4;  // add 8px
 font-size: @body-font-size * 2; // multiply  
 color: #fff / 4;  // divide #404040;
@@ -77,5 +77,17 @@ width: (100% / 2 ) + 25%; // use order of operations 75%
 ```
 
 #### Color Functions
+```less
+color: lighten(@color, 10%);
+color: darken(@color, 10%);
+color: saturate(@color, 10%);
+color: desaturate(@color, 10%);
+color: fade(@color, 50%); // opacity
+color: fadein(@color, 10%);
+color: fadeout(@color, 10%);
+color: spin(@color, 10%); // spin across color wheel (move 10% across color wheel)
+color: mix(@color, #246); // mix two colors
 
+
+```
 ## SASS
