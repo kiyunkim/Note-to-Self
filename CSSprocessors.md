@@ -10,7 +10,7 @@ This is where CSS preprocessors ro dynamic style sheet languages come in handy
   - Reusable components of CSS
   - Clarity in rule cascading
   - Advanced calculations
-  - *Preprocessors results a CSS file after it is processed*
+  - *Preprocessors results a CSS file after it is processed - it only processes CSS*
 
 ## LESS
 
@@ -46,9 +46,12 @@ The script will look through the DOM to find LESS files by looking at the rel at
 
 #### LESS Example
 ```less
+// single line comments work on LESS
+@import "reset.less"; // import this LESS file on top
+
+// this can be put into a separate LESS file - colors.less
 @main-color: pink;
 @heading-color: black;
-// single line comments work on LESS
 
 .container {
   color: @main-color;
@@ -58,5 +61,21 @@ The script will look through the DOM to find LESS files by looking at the rel at
   }
 }
 ```
+#### Variables
+- Must start with a letter
+- Case sensitive
+- Hyphens, underscores, numbers allowed as long as it doesn't start with it
+- Are constants (e.g. `@main-color: @main-color + 5%;` doesn't do anything)
+- Can be any unit, color, strings (e.g. font-family), or even complex type (entire value of `border` property)
+
+#### Operations
+```css
+font-size: 4px + 4;  // add 8px
+font-size: @body-font-size * 2; // multiply  
+color: #fff / 4;  // divide #404040;
+width: (100% / 2 ) + 25%; // use order of operations 75%
+```
+
+#### Color Functions
 
 ## SASS
