@@ -14,19 +14,6 @@ This is where CSS preprocessors or dynamic style sheet languages come in handy (
 
 ## LESS
 
-### LESS on Client
-- Support for Server Support
-  - Node.js
-  - ASP.NET
-  - Rails, JSP, etc
-
-```html
-<link rel="stylesheet/less" type="text/css" href="css/style.less">
-<script type="text/javascript" src="js/less.js"></script>
-```
-
-The script will look through the DOM to find LESS files by looking at the rel attributes.
-
 ### LESS on Server
 
 - It is common to process LESS files on the server
@@ -47,6 +34,14 @@ The script will look through the DOM to find LESS files by looking at the rel at
   }
   ```
   </details>
+  
+### LESS on Client
+```html
+<link rel="stylesheet/less" type="text/css" href="css/style.less">
+<script type="text/javascript" src="js/less.js"></script>
+```
+
+The script will look through the DOM to find LESS files by looking at the rel attributes.
 
 #### LESS Example
 ```less
@@ -87,9 +82,11 @@ color: lighten(@color, 10%);
 color: darken(@color, 10%);
 color: saturate(@color, 10%);
 color: desaturate(@color, 10%);
+
 color: fade(@color, 50%); // opacity
 color: fadein(@color, 10%);
 color: fadeout(@color, 10%);
+
 color: spin(@color, 10%); // spin across color wheel (move 10% across color wheel)
 color: mix(@color, #246); // mix two colors
 ```
@@ -186,6 +183,7 @@ color: desaturate($color, 10%);
 
 color: fade_in($color, .1);
 color: fade_out($color, .1);
+
 color: invert($color);
 color: complement($color);
 ```
@@ -205,22 +203,23 @@ $percnt: percentage(.14);  // get percentage
 ```
 ### String interpolation
 - Use pound `#` with the variable in curly braces to input string value of the variable
-  - \*this will also work with any value (e.g. `24px` can be put in as a string)
+  - \*this will also work with any value (e.g. `14px` can be put in as a string)
 ```sass
 // can use Ruby/PHP style string insertion
 $root: "/images/";
+$baseFontSize: 14px;
+$baseClass: "myClass";
 
 body {
   background: url("#{$root}background.jpg");
-  // becomes background: url("/images/background.jpg");
-  // below also works
-  // background: url($root + "background.jpg");
+  background: url($root + "background.jpg");
+  // both become background: url("/images/background.jpg");
+  
+  // background: url("#{$baseFontSize + 10}background.jpg"); would become 
+  // background: url("24pxbackground.jpg"); since $baseFontSize + 10 has been processed into a string
 }
-```
-```sass
-$myClass: "my-class";
 
-.#{$myClass} { // .my-class
+.#{$baseClass}1 { // .myClass1
   color: #333;
 }
 ```
