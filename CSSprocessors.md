@@ -15,6 +15,10 @@ This is where CSS preprocessors ro dynamic style sheet languages come in handy
 ## LESS
 
 ### LESS on Client
+- Support for Server Support
+  - Node.js
+  - ASP.NET
+  - Rails, JSP, etc
 
 ```html
 <link rel="stylesheet/less" type="text/css" href="css/style.less">
@@ -61,14 +65,14 @@ The script will look through the DOM to find LESS files by looking at the rel at
   }
 }
 ```
-#### Variables
+### Variables
 - Must start with a letter
 - Case sensitive
 - Hyphens, underscores, numbers allowed as long as it doesn't start with it
 - Are constants (e.g. `@main-color: @main-color + 5%;` doesn't do anything)
 - Can be any unit, color, strings (e.g. font-family), or even complex type (entire value of `border` property)
 
-#### Operations
+### Operations
 ```less
 font-size: 4px + 4;  // add 8px
 font-size: @body-font-size * 2; // multiply  
@@ -76,8 +80,9 @@ color: #fff / 4;  // divide #404040;
 width: (100% / 2 ) + 25%; // use order of operations 75%
 ```
 
-#### Color Functions
+### Color Functions
 ```less
+// @color needs to be a numeric value (hex code or hsl, not names)
 color: lighten(@color, 10%);
 color: darken(@color, 10%);
 color: saturate(@color, 10%);
@@ -87,7 +92,68 @@ color: fadein(@color, 10%);
 color: fadeout(@color, 10%);
 color: spin(@color, 10%); // spin across color wheel (move 10% across color wheel)
 color: mix(@color, #246); // mix two colors
-
-
 ```
+### More functions
+```less
+@hue: hue(@color); // get hue value from color
+@saturation: saturation(@color); 
+@light: lightness(@color); // get lightness value
+@alpha: alpha(@color); // get alpha channel values
+@color: hsl(20%, 30%, 40%); // generate color with hsl(hue saturation light) formula
+
+@round: round(3.14);  // round to nearest whole number
+@rndUp: ceil(3.14);   // round up to nearest whole number
+@rndDwn: floor(3.14); // round down to nearest whole number
+@percnt: percentage(.14);  // get percentage
+```
+
+### Mixins
+- Repeatable sections in CSS code (e.g. `border-radius` or `box-sizing`, which require different prefixes)
+  - Look and feel like functinos (take input parametes)
+  - But insert more than one name/value pair
+  - Accepts parameters, defaults, overloads
+- Starts with a name after a `.` with an optional parameter 
+  ```less
+  .rounded-corners-all(@size: 5px) { // default is 5px
+    border-radius: @size;
+    -webkit-border-radius: @size;
+    -moz-border-radius: @size;
+  }
+
+  #container {
+    .rounded-corners-all(10px);
+    // .roounded-corners-all; would have default of 5px
+  }
+  ```
+
 ## SASS
+- Dynamic Style Sheet Language
+  - "Syntactically Awesome StyleSheets"
+- Introduces programming features
+- Has 2 syntaxes: SASS and SCSS
+  - SASS was based on indention but CSS wasn't valid SASS
+    ```sass
+    $baseFontSize: 14px
+    
+    #container
+      h1
+        font-size: $baseFontSize
+    ```
+    
+  - SCSS is more common, and looks & feels more like CSS
+    ```sass
+    $baseFontSize: 14px;
+    
+    #container {
+      h2 {
+        font-size: $basefontSize;
+      }
+    }
+    ```
+    
+### SASS on the Server
+- Support for Server-Side
+  - Node.js
+  - ASP.NET iva Plugin (e.g. Chirpy)
+  - Rails, JSP, etc
+  
