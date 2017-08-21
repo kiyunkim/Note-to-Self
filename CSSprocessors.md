@@ -86,12 +86,13 @@ $unquoted: unquote($sometext); // remove quotes from variables or other pieces o
 
 $value: if(true, $colorTrue, $colorFalse); // if some value is true, choose the first option; if false choose second option
 
-
 $round: round(3.14);  // round to nearest whole number
 $rndUp: ceil(3.14);   // round up to nearest whole number
 $rndDwn: floor(3.14); // round down to nearest whole number
 $percnt: percentage(.14);  // get percentage
 ```
+[Even more functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
+
 ### String interpolation
 - Use pound `#` with the variable in curly braces to input string value of the variable
   - \*this will also work with any value (e.g. `14px` can be put in as a string)
@@ -226,9 +227,38 @@ body {
   }
   ```
 
+### Control Directives
 
+#### `@if`
+```sass
+h1 {
+  @if $size > 14px {
+    color: blue;
+  }
+  @else if $size < 14px {
+    color: red;
+  }
+  @else { // if $size == 14px
+    color: green;
+  }
+}
+```
+  
+#### `@for`
+- Variable based loop
+```sass
+$page_width: 1000px;
 
+@for $col from 1 through 4 {  
+// defines new variable $col
+// walk through 4 times specifying that the value of $col is that number
+  .col#{$col} { // will loop through .col1, .col2, .. 
+    width: $page_width / $col;
+  }
+}
+```
 
+#### `@each` and `@while`
 
 
 
