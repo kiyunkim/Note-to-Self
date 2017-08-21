@@ -178,6 +178,7 @@ width: (100% / 2 ) + 25%; // use order of operations 75%
 ### Color Functions
 
 ```sass
+// $color does NOT have to be numeric
 color: lighten($color, 10%);
 color: darken($color, 10%);
 color: saturate($color, 10%);
@@ -203,14 +204,17 @@ $rndDwn: floor(3.14); // round down to nearest whole number
 $percnt: percentage(.14);  // get percentage
 ```
 ### String interpolation
-Use the syntax of a pound`#`, with the variable in curly braces to use string values
+- Use pound `#` with the variable in curly braces to input string value of the variable
+  - \*this will also work with any value (e.g. `24px` can be put in as a string)
 ```sass
 // can use Ruby/PHP style string insertion
 $root: "/images/";
 
 body {
   background: url("#{$root}background.jpg");
-  // background: url("/images/background.jpg");
+  // becomes background: url("/images/background.jpg");
+  // below also works
+  // background: url($root + "background.jpg");
 }
 ```
 ```sass
