@@ -181,8 +181,8 @@ color: darken($color, 10%);
 color: saturate($color, 10%);
 color: desaturate($color, 10%); 
 
-color: fade_in($color, .1);
-color: fade_out($color, .1);
+color: fade-in($color, .1);
+color: fade-out($color, .1);
 
 color: invert($color);
 color: complement($color);
@@ -223,3 +223,62 @@ body {
   color: #333;
 }
 ```
+### Rules
+
+- Allows structuring in a logical way
+
+#### Nesting of hierarchies that will be processed into CSS
+```sass
+nav {
+  font-size: 14px;
+  ul {
+    list-style-type: none;
+    li { // nav ul li
+      display: inline-block;
+    }
+  }
+}
+```
+#### Uses parent selector `&` to mix with parent
+```sass
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+```
+
+#### Nest properties
+```sass 
+.button {
+  font: {
+    family: helvetica, arial, sans-serif;
+    size: 14px;
+    weight: normal;
+  }
+}
+```
+
+### Directives
+- Operations on the CSS - tells the processor to do certain things
+
+#### `@import`
+- Take some file and import it directly inside another file in a specific space
+```sass
+@import "foo.css";
+// emits CSS import
+// @import url(foo.css);
+
+@import "foo.scss"; // embeds in result
+@import "foo"; // also embeds .scss
+
+// nesting import
+body {
+  @import "colors";
+}
+```
+
+
+
+`@import, @extend, @mixin, @function`
