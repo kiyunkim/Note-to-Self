@@ -46,6 +46,7 @@ This is where CSS preprocessors or dynamic style sheet languages come in handy (
   - Rails, JSP, etc
 
 ### Variables
+- Variables can be scoped globally or locally
 ```sass
 $myColor: #ffeedd;
 
@@ -53,6 +54,14 @@ $color: black;
 $unit: 4px; // or 1em or 50%
 $list: arial, sans-serif;
 $complexList: 1px solid #333;
+
+nav { 
+  $color: #333;
+  color: $color;
+  a {
+    color: $color;
+  }
+}
 ```
 
 ### Operations
@@ -131,7 +140,7 @@ nav {
   }
 }
 ```
-#### Uses parent selector `&` to mix with parent
+#### Uses parent selector combinator `&` to mix with parent
 ```sass
 a {
   text-decoration: none;
@@ -244,7 +253,7 @@ h1 {
 }
 ```
   
-#### `@for`
+#### `@for` loop
 - Variable based loop
 ```sass
 $page_width: 1000px;
@@ -258,9 +267,24 @@ $page_width: 1000px;
 }
 ```
 
-#### `@each` and `@while`
+#### `@each` and `@while` loops
 
+```sass
+// take a list of items (some strings in this case)
+@each $item in first, second, third, fourth {
+  .#{$item} { // create .first, .second, .third, .fourth
+    background-url: url(/images/#{$item}.jpg); // use same name for image
+  }
+}
 
+$i: 1;
+@while $i < 5 {
+  h#{$i} {
+    font-size: $i * 4px;
+    $i: $i + 1; // to update value of $i at end of loop
+  }
+}
+```
 
 
 
@@ -384,3 +408,5 @@ color: mix(@color, #246); // mix two colors
     // .roounded-corners-all; would have default of 5px
   }
   ```
+
+### Nested Rules
