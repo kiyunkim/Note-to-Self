@@ -1,10 +1,18 @@
 # Agile
 
 - a methodology/philosophy; [Kanban](#kanban) and [Scrum](#scrum) are frameworks for the Agile environment
+- [JIRA](#jira) is an issue tracker commonly used by Agile teams
 - Wikipedia:
   - Agile software development describes a set of values and principle for software development in which the requirements and solutions change and evolve through the collaborative effort of cross-functional teams. 
   - It advocates adaptive planning, evolutionary development, continuous movement, and encourages rapid and flexible response to change.
 
+  
+### Value/Effort Matrix
+  
+  - Quickly rank features by their **value** relative to its **effort** or difficulty.
+  - 4 Quadrant map: x-axis as difficulty, y-axis as value
+  - Used for 'nice to have' features, not critical or need-have features
+  
 ## Kanban
 
 - Follows a continuous flow
@@ -22,12 +30,19 @@
   - Each role is represented in all meetings
   - Enhances communication within team
   
-  
-  
------
-  
-### Value/Effort Matrix
-  
-  - Quickly rank features by their **value** relative to its **effort** or difficulty.
-  - 4 Quadrant map: x-axis as difficulty, y-axis as value
-  - Used for 'nice to have' features, not critical or need-have features
+&nbsp;
+&nbsp;
+&nbsp;
+
+--- 
+
+## JIRA
+- Created by Atlassian
+- First and foremost issue tracking -- but has evolved into a tool for planning and organizing projects used by Agile teams
+
+### Issues
+- **Issues** can be used to describe a new feature, bug, task, or improvement
+- Anatomy of an issue
+  - Base information and fields (key, summary, timestamps, assignees)
+  - Resolution (fixed, won't fix, duplicate) and Status (open, closed)
+  - Custom fields
