@@ -1,6 +1,6 @@
 # Agile
 
-- a methodology/philosophy; [Kanban](#kanban) and [Scrum](#scrum) are frameworks for the Agile 
+- a methodology/philosophy; [Kanban](#kanban) and [Scrum](#scrum) are frameworks for the Agile environment
 - Wikipedia:
   - Agile software development describes a set of values and principle for software development in which the requirements and solutions change and evolve through the collaborative effort of cross-functional teams. 
   - It advocates adaptive planning, evolutionary development, continuous movement, and encourages rapid and flexible response to change.
