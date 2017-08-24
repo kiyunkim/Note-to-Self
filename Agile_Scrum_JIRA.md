@@ -46,3 +46,10 @@
   - Base information and fields (key, summary, timestamps, assignees)
   - Resolution (fixed, won't fix, duplicate) and Status (open, closed)
   - Custom fields
+
+### JIRA Concepts
+- Issue can belong to several **components**
+  - Components are part of a project (e.g. user interface, database, business component)
+- All issues must be assigned to a project
+  - In JIRA a project will have its own home page or dashboard
+    
