@@ -32,6 +32,15 @@
 - Burndown chart & Velocity:
   - **Burndown chart** is a graphical representation of work pending vs time left
   - **Velocity** is the amount of work a team can do in particular sprint; it is a guideline used to determine how much work can be done in the next sprint and it is not a constant. 
+- Daily Scrum
+  - 15 minutes
+  - Communication & collaboration meeting
+  - Scrum master moderates and removes impediments
+  - "What did you do yesterday? What will you do today? Are there any impediments in your way?"
+- Sprint retrospective
+  - After Sprint is complete
+  - "What should we start doing? What should we stop doing? What should we continue doing?"
+  - Prioritize, vote, act
 
 
 &nbsp;
