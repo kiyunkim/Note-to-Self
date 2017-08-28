@@ -29,15 +29,21 @@
 - Defines specific meetings for a sprint 
   - Each role is represented in all meetings
   - Enhances communication within team
-  
+- Burndown chart & Velocity:
+  - **Burndown chart** is a graphical representation of work pending vs time left
+  - **Velocity** is the amount of work a team can do in particular sprint; it is a guideline used to determine how much work can be done in the next sprint and it is not a constant. 
+
+
 &nbsp;
 &nbsp;
 &nbsp;
 
 --- 
 
-## JIRA
-- Created by Atlassian
+## JIRA Agile
+- Created by Atlassian for Agile product management
+- Create and estimate stories, build and prioritize backlog, team commitment, velocity, etc
+- Based on 3 boards: Planning, Task, Chart
 - First and foremost issue tracking -- but has evolved into a tool for planning and organizing projects used by Agile teams
 
 ### Issues
@@ -78,9 +84,9 @@
 
 ### Vocab
 
-- **Epic**: High level category; has no starting or end date. Specific stories and tasks will be assigned under it. (e.g. Performance improvement is an epic)
-- **Story**: Used for larger amounts of work
-- **Task**: Simpler and smaller
+- **Epic**: High level category; has no starting or end date. Specific stories and tasks will be assigned under it. (e.g. Performance improvement is an epic) Known as themes in Scrum
+- **Story**: Used for larger amounts of work; short description of a functionality
+- **Task**: Simpler and smaller - a punctual to do or action item
   - **Sub-task**
 - **Bug**
 - 
