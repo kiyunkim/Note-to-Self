@@ -55,6 +55,26 @@
     
 ### Search
 
+- Keywords are case sensitive
+- Keywords for smart querying
+
+  **Term** | **Example**
+  ---- | ----
+  `my` | my open bugs
+  `r:` | r:me or r:stuart
+  `<project name or key>` | WEBOPT or Web Optimization
+  `overdue` | overdue
+  `created:` `updated:` `due:` | created:yesterday or updated:-1w
+  `<priority>` | medium low critical
+  `<resolution>` | fixed cannot reproduce 
+  `<issue type>` | bug task bugs tasks
+  `c:` for components | c:gpstracker
+  `v:` | v:1.0
+  `ff:` for fixed version | ff:1.0
+  `*` wildcard | v:1.5\*
+
+- JQL
+
 
 ### Vocab
 
