@@ -3,6 +3,7 @@
 - AngularJS
 - ReactJS
 - Node.js
+- CreateJS
 
 
 ## Misc
