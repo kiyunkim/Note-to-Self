@@ -53,6 +53,9 @@
 - All issues must be assigned to a project
   - In JIRA a project will have its own home page or dashboard
     
+### Search
+
+
 ### Vocab
 
 - **Epic**: High level category; has no starting or end date. Specific stories and tasks will be assigned under it. (e.g. Performance improvement is an epic)
