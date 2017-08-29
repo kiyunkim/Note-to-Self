@@ -93,9 +93,10 @@
 
 ### Vocab
 
-- **Epic**: High level category; has no starting or end date. Specific stories and tasks will be assigned under it. (e.g. Performance improvement is an epic) Known as themes in Scrum
-- **Story**: Used for larger amounts of work; short description of a functionality
-- **Task**: Simpler and smaller - a punctual to do or action item
-  - **Sub-task**
-- **Bug**
-- 
+Term | Description
+--- | ----
+Epic | High level category; has no starting or end date. Specific stories and tasks will be assigned under it. (e.g. Performance improvement is an epic) Known as themes in Scrum
+Story | Used for larger amounts of work; short description of a functionality
+Task | Simpler and smaller - a punctual to do or action item
+Subtask |
+Bug | 
