@@ -166,33 +166,33 @@ a {
 
 #### `@import`
 - Take some file and import it directly inside another file in a specific space
-```sass
-@import "foo.css";
-// emits CSS import
-// @import url(foo.css);
+  ```sass
+  @import "foo.css";
+  // emits CSS import
+  // @import url(foo.css);
 
-@import "foo.scss"; // embeds in result
-@import "foo"; // also embeds .scss
+  @import "foo.scss"; // embeds in result
+  @import "foo"; // also embeds .scss
 
-// nesting import
-body {
-  @import "colors";
-}
-```
+  // nesting import
+  body {
+    @import "colors";
+  }
+  ```
 
 #### `@extend`
 - Extend rules from other rules, or creating inheritance inside of a rule
 - Multiple inheritances from a rule or class works as well
-```sass
-.button {
-  color: black;
-  text-transform: uppercase;
-}
-.submit-button {
-  @extend .button;
-  border: 1px solid #333;
-}
-```
+  ```sass
+  .button {
+    color: black;
+    text-transform: uppercase;
+  }
+  .submit-button {
+    @extend .button;
+    border: 1px solid #333;
+  }
+  ```
 #### `@mixin`
 - Repeatable sections in CSS code (e.g. `border-radius` or `box-sizing`, which require different prefixes)
   - Feel like functions: can be called with parameters
@@ -200,17 +200,17 @@ body {
   - Accepts parameters, defaults, overloads
 - Define mixin name after `@mixin`, call the mixin with `@include` inside a declaration
   ```sass
-  @mixin font-large {
-    font: {
-      size: 14px;
-      family: sans-serif;
-      weight: bold;
+    @mixin font-large {
+      font: {
+        size: 14px;
+        family: sans-serif;
+        weight: bold;
+      }
     }
-  }
-  h1 {
-    @include font-large;
-  }
-  ```
+    h1 {
+      @include font-large;
+    }
+    ```
 - Parameterized mixins:
   ```sass
   @mixin round-corners-all($size: 5px) {
@@ -218,10 +218,17 @@ body {
     -moz-border-radius: $size;
     border-radius: $size;
   }
+  @mixin button($border, $bg) {
+    border: $border;
+    background: $bg;
+  }
+  
   .button {
     @include rounded-corners-all(10px);
     // or just to use the default: @include rounded-corners-all;
+    @include button(1px solid $black, $white);
   }
+  
   ```
 #### `@function`
 - Create standard code which is used for functional representations
