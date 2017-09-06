@@ -193,6 +193,22 @@ a {
     border: 1px solid #333;
   }
   ```
+- **Placeholder selectors** will not show up in the generated CSS, only the selectors that extend them will be included in the output. Uses `%` character
+  ```sass
+  a%button {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .navlink {
+    @extend %button;
+  }
+  
+  /*** the above compiles to... ***/
+  a.navlink {
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  ```
 #### `@mixin`
 - Repeatable sections in CSS code (e.g. `border-radius` or `box-sizing`, which require different prefixes)
   - Feel like functions: can be called with parameters
