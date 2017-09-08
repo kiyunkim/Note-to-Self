@@ -1,4 +1,5 @@
 ## Languages, Frameworks, Libraries 
+- AJAX
 - Bootstrap
 - AngularJS
 - ReactJS
