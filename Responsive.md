@@ -27,6 +27,22 @@ aside { .column(12); }
 }
 ```
 
+## Media Queries
+```html
+<link media="screen and (max-width:767px)" ...
+```
+```css
+@media screen and (max-width 767px) { ... }
+```
+#### Media Types
+- Braille
+- Embossed
+- Speech
+- Handheld
+- Projection
+- Screen
+- TV
+- Print
 -----
 ## Tips
 
