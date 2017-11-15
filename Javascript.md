@@ -76,6 +76,8 @@ switch (expressionOrArgument) {
 ```
 
 ### Loop
+
+#### For Loops
 - Loops through a block of code until an original condition is no longer true
 
 ```javascript
@@ -89,3 +91,21 @@ for (i = 0; i <= 10; i++) {
   1. Create variable with its value (at i = 0)
   2. Code runs while this condition is true (i <= 10)
   3. Update the value after checking it is true (add by 1, i++)
+
+#### Do While Loops
+- 'Do X while Y is true'
+```js
+var i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 11);
+
+
+// or just the while loop:
+var i = 0;
+while(i < 11) {
+  console.log(i);
+  i++;
+}
+```
