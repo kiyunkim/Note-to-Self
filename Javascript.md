@@ -117,8 +117,9 @@ while(i < 11) {
 ## Functions
 ```js
 // declare new function
-function myFunction(param) {
-
+function newFunction(parameter) {
+  // run code
 }
-
+// call or invoke the function by passing an argument
+newFunction(argument);
 ```
