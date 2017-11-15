@@ -123,3 +123,10 @@ function newFunction(parameter) {
 // call or invoke the function by passing an argument
 newFunction(argument);
 ```
+## Arrays 
+```js
+var languages = ['french', 'english', 'korean']; 
+languages[1] // returns 'english'
+// arrays start at 0
+
+```
