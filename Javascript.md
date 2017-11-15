@@ -109,3 +109,4 @@ while(i < 11) {
   i++;
 }
 ```
+> The difference above: when `i` is initially 11, it will log in the console using the do loop but not the second because it checks the condition (`i < 11`) before logging.
