@@ -4,12 +4,13 @@
 - Primarily client side, does not have to run through a server (like PHP or .NET) to work - only needs the browser in order to run
 - Fully featured language but originally designed as a **scripting language** (language used to communicate with an existing application)
 
-### General Notes
+### General Notes, Vocab
 
-- Less lines = smaller file
 - Modulo symbol `%`
 - `true` = `1`  
   `false` = `0`
+- function/method
+- parameter/argument
 
 ### Code reference
 
@@ -125,8 +126,21 @@ newFunction(argument);
 ```
 ## Arrays 
 ```js
-var languages = ['french', 'english', 'korean']; 
-languages[1] // returns 'english'
 // arrays start at 0
 
+var languages = ['french', 'english', 'korean']; 
+languages[1] // returns 'english'
+languages[3] = 'japanese'; // assign fourth string in the 3rd position
+languages.push('chinese'); // assigns to the last position in the array
+// so now languages is..
+var languages = ['french', 'english', 'korean', 'japanese', 'chinese'];
+
+languages.length // returns 5
+
+// loop through array
+function loopLanguages() {
+  for(var i = 0; i < languages.length; i++) {
+    console.log("I speak "+ languages[i]);
+  }
+}
 ```
