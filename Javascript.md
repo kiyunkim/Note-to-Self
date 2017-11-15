@@ -14,7 +14,8 @@
 ### Code reference
 
 ```javascript
-prompt("Enter your name"); // returns what is typed into the input
+prompt("Enter your name", "Enter Name"); // returns what is typed into the input
+confirm("Are you sure you want to quit?"); // 'ok' returns true, 'cancel' returns false
 
 console.log("hello world");
 console.warn('warning!'); 
@@ -110,3 +111,14 @@ while(i < 11) {
 }
 ```
 > The difference above: when `i` is initially 11, it will log in the console using the do loop but not the second because it checks the condition (`i < 11`) before logging.
+
+- Useful when you don't know how many times you need the loop to run
+
+## Functions
+```js
+// declare new function
+function myFunction(param) {
+
+}
+
+```
