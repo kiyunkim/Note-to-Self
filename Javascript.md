@@ -144,3 +144,21 @@ function loopLanguages() {
   }
 }
 ```
+
+## Objects
+
+An **object** is a collection of **properties**, which are described in the form of **key/value** pairs. In other words, key/value pairs make up a property and its value, which is assigned to an object. We can use objects to model "things" using code.
+
+```js
+// OBJECT LITERAL NOTATION
+var myObject = {
+  key: value,
+  property: anotherValue 
+};
+
+var myCoffee = {
+  flavor: "french vanilla",
+  milk: true,
+  sugar: 3
+  };
+```
