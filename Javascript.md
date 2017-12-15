@@ -163,6 +163,7 @@ var myCoffee = {
   sugar: 3
   };
 ```
+Objer literals define and create a single object, referred as an **instance** of an object.
 
 ### Methods
 
@@ -191,3 +192,4 @@ myCoffee.reheat();
 reheat(); // won't work because it's a method and requires and object it is associated to
 ```
 
+### Object Constructer
