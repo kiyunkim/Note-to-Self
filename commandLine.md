@@ -13,10 +13,10 @@ $ cd ~
 $ pwd
 /Users/kiyun
 $ mkdir temp
-$ mkdir temp/something
+$ mkdir temp/'another folder'
 ```
 Use `cd ~` to go back to the home directory and print working directory to check you are at home.  
-`mkdir temp` and `mkdir temp/something` creates the folder 'temp' in the home directory, and the folder 'something' inside of the 'temp' folder.
+`mkdir temp` and `mkdir temp/'another folder'` creates the folder 'temp' in the home directory, and the folder 'another folder' inside of the 'temp' folder.
 
 
 ## Vocabulary
@@ -55,8 +55,6 @@ Command Name | Description
 `export`|export/set a new environment variable
 `exit`|exit the shell
 `sudo`|become super user root **CAUTION!**
-
-`cd ~` to go home
 
 
 ---
