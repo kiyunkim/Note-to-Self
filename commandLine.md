@@ -1,31 +1,37 @@
 [Source](https://learnpythonthehardway.org/book/appendix-a-cli/introduction.html)
 
-Simple command
+## Commands
 ```command
-$ pwd
+$ pwd 
 /Users/kiyun
 $
 ```
+Prints working directory
 
-- Do not type in the `$` (Unix) or `>` (Windows). That's just showing you my **session** so you can see what I got.
-- You can then see what I have for output followed by another `$` or `>` **prompt**. That content is the output and you should see the same output.
+```command
+$ cd ~
+$ pwd
+/Users/kiyun
+$ mkdir temp
+$ mkdir temp/something
+```
+Use `cd ~` to go back to the home directory and print working directory to check you are at home.  
+`mkdir temp` and `mkdir temp/something` creates the folder 'temp' in the home directory, and the folder 'something' inside of the 'temp' folder.
 
----
-#### Vocabulary
+
+## Vocabulary
 - **Shell**
   - In computing, a **shell** is a user interface for access to an operating system's services. In general, operating system shells use either a **command-line interface** (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system kernel.
 - **Folder and Directory** are the same thing
 - **Session**
+  - Do not type in the `$` (Unix) or `>` (Windows). That's just showing you my **session** so you can see what I got.
 - **Prompt**
-
-
-
-
+  - You can then see what I have for output followed by another `$` or `>` **prompt**. That content is the output and you should see the same output.
 
 ---
-#### To Memorize
+### To Memorize
 
-Command Name      | Description
+Command Name | Description
 ---------- | -----------
 `pwd`|print working directory
 `hostname`|my computer network name
@@ -50,8 +56,9 @@ Command Name      | Description
 `exit`|exit the shell
 `sudo`|become super user root **CAUTION!**
 
-
+`cd ~` to go home
 
 
 ---
-#### Questions to Review
+### Questions to Review
+- Is there a way to comment?
