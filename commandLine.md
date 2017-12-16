@@ -13,8 +13,17 @@
 ---
 #### To Memorize
 
-
-
+Command Name      | Description
+---------- | -----------
+`pwd`|print working directory
+`hostname`|my computer network name
+`mkdir`|make directory
+`cd`|change directory
+`ld`|list directory
+`rmdir`|remove directory
+`pushd`|push directory
+`popd`|pop directory
+`cp`|copy a file or directory
 
 
 
