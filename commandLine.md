@@ -18,15 +18,15 @@ $ mkdir temp/'another folder'
 Use `cd ~` to go back to the home directory and print working directory to check you are at home.  
 `mkdir temp` and `mkdir temp/'another folder'` creates the folder 'temp' in the home directory, and the folder 'another folder' inside of the 'temp' folder.
 
-
-## Vocabulary
-- **Shell**
-  - In computing, a **shell** is a user interface for access to an operating system's services. In general, operating system shells use either a **command-line interface** (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system kernel.
-- **Folder and Directory** are the same thing
-- **Session**
-  - Do not type in the `$` (Unix) or `>` (Windows). That's just showing you my **session** so you can see what I got.
-- **Prompt**
-  - You can then see what I have for output followed by another `$` or `>` **prompt**. That content is the output and you should see the same output.
+```command
+$ cd temp
+$ pwd
+/Users/kiyun/temp
+$ cd ../
+$ pwd
+/Users/kiyun
+```
+`cd` to change directories through the tree/path.
 
 ---
 ### To Memorize
@@ -55,6 +55,20 @@ Command Name | Description
 `export`|export/set a new environment variable
 `exit`|exit the shell
 `sudo`|become super user root **CAUTION!**
+
+
+## Vocabulary
+- **Shell**
+  - In computing, a **shell** is a user interface for access to an operating system's services. In general, operating system shells use either a **command-line interface** (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system kernel.
+- **Folder = Directory**
+- **Session**
+  - Do not type in the `$` (Unix) or `>` (Windows). That's just showing you my **session** so you can see what I got.
+- **Prompt**
+  - You can then see what I have for output followed by another `$` or `>` **prompt**. That content is the output and you should see the same output.
+- **Command Line Interface (CLI)**  
+  - Means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines). [Wikipedia](https://en.wikipedia.org/wiki/Command-line_interface)
+- **Graphical User Interface (GUI)** 
+  - Program interface that takes advantage of the computer's graphics capabilities to make the program easier to use. Well-designed graphical user interfaces can free the user from learning complex command languages.  [Webopedia](https://www.webopedia.com/TERM/G/Graphical_User_Interface_GUI.html)
 
 
 ---
