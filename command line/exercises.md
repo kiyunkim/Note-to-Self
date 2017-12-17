@@ -1,11 +1,16 @@
 
 ## Commands
+
+### Print Directory 
+
 ```command
 $ pwd 
 /Users/kiyun
 $
 ```
 Prints working directory
+
+### Make a Directory
 
 ```command
 $ cd ~
@@ -17,6 +22,7 @@ $ mkdir temp/'another folder'
 Use `cd ~` to go back to the home directory and print working directory to check you are at home.  
 `mkdir temp` and `mkdir temp/'another folder'` creates the folder 'temp' in the home directory, and the folder 'another folder' inside of the 'temp' folder.
 
+### Change directories, list contents of directory
 ```command
 $ cd temp
 $ pwd
@@ -34,7 +40,7 @@ $ rmdir stuff
 `ls` list the contents of the current directory (in the above case, the temp directory)  
 `rmdir` removes the empty directory 'stuff'  
  \**When there is a .DS_Store file an error may come up saying the directory is not empty - if that happens enter `rm -rf <dir>` with `<dir>` as the directory name.*
- 
+ ### Push and Pop
  ```command
  $ cd temp
 $ mkdir -p i/like/icecream
@@ -75,7 +81,7 @@ Copied from [Learn Python the Hard Way](https://learnpythonthehardway.org/book/a
 `pushd` takes the current directory and "pushes" it into a list for later, then changes to another directory. "Save where I am now and then go here." (`pushd` by itself will switch between the current directory and the last pushed directory)  
 `popd` takes the last directory you pushed and "pops" it off, taking you back to it.  
 `mkdir -p` creates an entire path
-
+### Copy files and directories with files in them
 ```command
 $ cd temp
 $ cp iamcool.txt neat.txt
@@ -95,3 +101,7 @@ $ ls newplace/
 awesome.txt
 $
 ```
+`cp -r` command to copy directories with files in them.  
+Put a `/` at the end of a directory to make sure the file really is a directory.
+
+### Move files
