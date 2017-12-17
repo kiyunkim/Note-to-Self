@@ -25,8 +25,57 @@ $ pwd
 $ cd ../
 $ pwd
 /Users/kiyun
+$ cd temp
+$ mkdir temp/stuff
+$ ls
+stuff
+$ rmdir stuff
 ```
-`cd` to change directories through the tree/path.
+`cd` to change directories through the tree/path.  
+`ls` list the contents of the current directory (in the above case, the temp directory)  
+`rmdir` removes the empty directory 'stuff'  
+ \**When there is a .DS_Store file an error may come up saying the directory is not empty - if that happens enter `rm -rf <dir>` with `<dir>` as the directory name.*
+ 
+ ```command
+ $ cd temp
+$ mkdir -p i/like/icecream
+$ pushd i/like/icecream
+~/temp/i/like/icecream ~/temp
+$ popd
+~/temp
+$ pwd
+~/temp
+$ pushd i/like
+~/temp/i/like ~/temp
+$ pwd
+~/temp/i/like
+$ pushd icecream
+~/temp/i/like/icecream ~/temp/i/like ~/temp
+$ pwd
+~/temp/i/like/icecream
+$ popd
+~/temp/i/like ~/temp
+$ pwd
+~/temp/i/like
+$ popd
+~/temp
+$ pushd i/like/icecream
+~/temp/i/like/icecream ~/temp
+$ pushd
+~/temp ~/temp/i/like/icecream
+$ pwd
+~/temp
+$ pushd
+~/temp/i/like/icecream ~/temp
+$ pwd
+~/temp/i/like/icecream
+$
+ ```
+Copied from [Learn Python the Hard Way](https://learnpythonthehardway.org/book/appendix-a-cli/ex8.html)
+
+`pushd` takes the current directory and "pushes" it into a list for later, then changes to another directory. "Save where I am now and then go here." (`pushd` by itself will switch between the current directory and the last pushed directory)  
+`popd` takes the last directory you pushed and "pops" it off, taking you back to it.  
+`mkdir -p` creates an entire path
 
 ---
 ### To Memorize
@@ -74,3 +123,5 @@ Command Name | Description
 ---
 ### Questions to Review
 - Is there a way to comment?
+- What is `-lR`? 
+  - When typing in `ls -lR` in the temp directory: `drwxr-xr-x  3 kiyunkim  staff  96 Dec 16 15:51 stuff`
