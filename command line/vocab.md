@@ -17,6 +17,7 @@ Command Name | Description
 `touch` | create empty file
 `less`|page through a file
 `cat`|print the whole file
+`rm` | remove file
 `xargs`|execute arguments
 `find`|find files
 `grep`|find things inside files
@@ -49,3 +50,4 @@ Command Name | Description
 - What is `-lR`? 
   - When typing in `ls -lR` in the temp directory: `drwxr-xr-x  3 kiyunkim  staff  96 Dec 16 15:51 stuff`
 - Review `pushd` and `popd`
+- What is `cp -r [directory1] [directory2]`, `rm -rf [directory]`
