@@ -31,6 +31,13 @@ Command Name | Description
 `sudo`|become super user root **CAUTION!**
 
 
+
+Option Name | Description
+--|--
+`-l` | Long
+`-r`| ??
+`-rf`| ??
+
 ## Vocabulary
 - **Shell**
   - In computing, a **shell** is a user interface for access to an operating system's services. In general, operating system shells use either a **command-line interface** (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system kernel.
@@ -47,6 +54,8 @@ Command Name | Description
 - **Console:** This is the system as a whole. This is both the command line as well as the output from previous commands.
 - **Command Line:** This is the actual line in a console where you type your command.
 - **Terminal:** This is the actual interface to the console. The program we use to interact with the console is actually a "terminal emulator", providing us the experience of typing into an old school terminal from the convenience of our modern graphical operating system.
+- **Running a command**
+  - 3 main parts: the **program** (the 'verb' `ls`), the **options** (the 'adverb' `-l`), and the **arguments** (the 'object' `~`)
 
 ---
 ### Questions to Review
