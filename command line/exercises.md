@@ -111,5 +111,36 @@ $
 ```
 `cp -r` command to copy directories with files in them.  
 Put a `/` at the end of a directory to make sure the file really is a directory.
+\**`cp` command will overwrite files that already exists*
+
+### Rename files
+
+```command
+$ cd temp
+$ ls
+awesome.txt newplace
+$ mv awesome.txt uncool.txt
+$ ls
+newplace uncool.txt
+```
 
 ### Move files
+
+```command
+$ ls
+newplace uncool.txt
+$ mv uncool.txt newplace/
+$ ls
+newplace
+$ cd newplace
+$ ls
+uncool.txt
+```
+
+### View files
+```command
+$ less uncool.txt
+[shows file content uncool.txt]
+```
+Use `q` to exit out  
+Use spacebar and `w` to scroll up and down the file contents  
