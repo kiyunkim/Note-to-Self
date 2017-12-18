@@ -50,4 +50,6 @@ Command Name | Description
 - What is `-lR`? 
   - When typing in `ls -lR` in the temp directory: `drwxr-xr-x  3 kiyunkim  staff  96 Dec 16 15:51 stuff`
 - Review `pushd` and `popd`
-- What is `cp -r [directory1] [directory2]`, `rm -rf [directory]`
+- What is:  
+  `cp -r [directory1] [directory2]`,  
+  `rm -rf [directory]` (remove directory and its contents?)
