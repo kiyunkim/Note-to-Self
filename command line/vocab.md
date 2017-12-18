@@ -14,6 +14,7 @@ Command Name | Description
 `popd`|pop directory
 `cp`|copy a file or directory
 `mv`|move (or rename) a file or directory
+`touch` | create empty file
 `less`|page through a file
 `cat`|print the whole file
 `xargs`|execute arguments
