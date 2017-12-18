@@ -81,6 +81,14 @@ Copied from [Learn Python the Hard Way](https://learnpythonthehardway.org/book/a
 `pushd` takes the current directory and "pushes" it into a list for later, then changes to another directory. "Save where I am now and then go here." (`pushd` by itself will switch between the current directory and the last pushed directory)  
 `popd` takes the last directory you pushed and "pops" it off, taking you back to it.  
 `mkdir -p` creates an entire path
+### Create empty files
+
+```command
+$ touch hello.txt
+$ ls
+hello.txt
+```
+
 ### Copy files and directories with files in them
 ```command
 $ cd temp
