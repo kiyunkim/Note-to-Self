@@ -9,7 +9,7 @@ Command Name | Description
 `hostname`|my computer network name
 `mkdir`|make directory
 `cd`|change directory
-`ld`|list directory
+`ls`|list directory
 `rmdir`|remove directory
 `pushd`|push directory
 `popd`|pop directory
