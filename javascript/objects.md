@@ -7,6 +7,15 @@ Three main types of objects:
 2. **Core objects** - objects defined by and built into the js language. E.g. `Math`, `Date`, `Number`
 3. Everything else - objects defined by code's author, or objects defined by js libraries
 
+## Object Oriented Programming
+
+- Revolves around objects and how code moves back and forth between objects
+
+Procedural | Object Oriented
+----|----
+Step-by-step instructions read from top to bottom | Objects pass code back and forth amongst one another
+
+
 ## Creating Objects 
 
 ### Object Literal
@@ -79,15 +88,7 @@ var joe = {
 ```
 
 
-## Object Oriented Programming
-
-- Revolves around objects and how code moves back and forth between objects
-
-Procedural | Object Oriented
-----|----
-Step-by-step instructions read from top to bottom | Objects pass code back and forth amongst one another
-
-### The Global Object
+## The Global Object
 
 - In js when we're creating variables, functions, and objects, they become properties of the **global object**.
   - The window is the **global object** when the host environment is the web. When we write a function that isn't associated with an object, it becomes a method of the global object.
@@ -106,3 +107,15 @@ function alert() {
   console.log('Hello');
 };
 ```
+
+## Local & Global Scope
+
+- Variables in the **global scope** (global variables) can be accessed, changed, and used anywhere in the code; Can be risky since it can accidentally overwrite other code
+  - Should be careful when creating things that are global in scope, especially when js libaries such as jQuery is involved.
+  
+
+- JS uses *function scope*, meaning every time we create a new function the scope changes. Any code inside of a function can't be accessed outside of the function, because its scope is **local** to that function. 
+  - Forgetting the `var` keyword when declaring a variable inside of a function can create a global variable
+  
+  
+  
