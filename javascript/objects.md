@@ -7,17 +7,9 @@ Three main types of objects:
 2. **Core objects** - objects defined by and built into the js language. E.g. `Math`, `Date`, `Number`
 3. Everything else - objects defined by code's author, or objects defined by js libraries
 
-## Object Oriented Programming
+## Creating Objects 
 
-- Revolves around objects and how code moves back and forth between objects
-
-Procedural | Object Oriented
-----|----
-Step-by-step instructions read from top to bottom | Objects pass code back and forth amongst one another
-
-
-
-## Object Literal
+### Object Literal
 
 ```js
 // OBJECT LITERAL NOTATION
@@ -35,7 +27,7 @@ var myCoffee = {
 ```
 Objer literals create and define an object at the same time; creating an **instance** of an object.
 
-## Methods
+### Methods
 
 A function in an object (a property with a function as the value). For example, in `console.log()`, log is a method of the `console` object.
 
@@ -62,7 +54,7 @@ myCoffee.reheat();
 reheat(); // won't work because it's a method and requires and object it is associated to
 ```
 
-## Object Constructor
+### Object Constructor
 
 - Defines a template for an object, also known as a **prototype**.
 - Function used to create **multiple instances** of an object
@@ -86,3 +78,31 @@ var joe = {
 };
 ```
 
+
+## Object Oriented Programming
+
+- Revolves around objects and how code moves back and forth between objects
+
+Procedural | Object Oriented
+----|----
+Step-by-step instructions read from top to bottom | Objects pass code back and forth amongst one another
+
+### The Global Object
+
+- In js when we're creating variables, functions, and objects, they become properties of the **global object**.
+  - The window is the **global object** when the host environment is the web. When we write a function that isn't associated with an object, it becomes a method of the global object.
+
+```js 
+function sayHello() {
+  alert('Hello');
+};
+
+// below do the same thing
+sayHello();
+window.sayHello();
+
+// below overrides the original window.alert() method
+function alert() {
+  console.log('Hello');
+};
+```
