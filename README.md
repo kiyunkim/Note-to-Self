@@ -1,9 +1,9 @@
 
 <h1 align="center">Notes</h1>
-
-<sub>*Notes in this repository is for personal use, and may not contain complete information on each topic.</sub>
-
+  
 General notes for myself to keep track of my learning.  
+<sup>*Notes in this repository is for personal use, and may not contain complete information on each topic.</sup>
+  
   
   
 
