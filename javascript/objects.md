@@ -2,6 +2,21 @@
 
 An **object** is a collection of **properties**, which are described in the form of **key/value** pairs. In other words, key/value pairs make up a property and its value, which is assigned to an object. We can use objects to model "things" using code.
 
+Three main types of objects:
+1. **Host objects** - objects defined by the environment in which your code is run. E.g. a web browser is a host environment that have the defined objects: `document`, `window`, `console`, etc
+2. **Core objects** - objects defined by and built into the js language. E.g. `Math`, `Date`, `Number`
+3. Everything else - objects defined by code's author, or objects defined by js libraries
+
+## Object Oriented Programming
+
+- Revolves around objects and how code moves back and forth between objects
+
+Procedural | Object Oriented
+----|----
+Step-by-step instructions read from top to bottom | Objects pass code back and forth amongst one another
+
+
+
 ## Object Literal
 
 ```js
@@ -49,6 +64,7 @@ reheat(); // won't work because it's a method and requires and object it is asso
 
 ## Object Constructor
 
+- Defines a template for an object, also known as a **prototype**.
 - Function used to create **multiple instances** of an object
   - Best practice to name the function with the first letter capitalized
   - Each instance inherits the properties and methods of its constructor
@@ -69,8 +85,4 @@ var joe = {
   tshirtColor: "red"
 };
 ```
-
-## Object Oriented Programming
-
-
 
