@@ -11,6 +11,13 @@
   `false` = `0`
 - function/method
 - parameter/argument
+- `'use strict'` statement: forces a strict method of linting 
+
+#### Notable Words
+- Scope
+- Key/value
+- Parameter
+- *Namespacing*
 
 ### Code reference
 
@@ -145,3 +152,7 @@ function loopLanguages() {
 }
 ```
 
+## Coding Conventions
+
+- Small details are important especially when other people will be reading and working with the code
+- One way to help write code in a standard way is to use a **linting tool** like JSLint.
