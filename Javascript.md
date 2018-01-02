@@ -149,6 +149,8 @@ function loopLanguages() {
 
 An **object** is a collection of **properties**, which are described in the form of **key/value** pairs. In other words, key/value pairs make up a property and its value, which is assigned to an object. We can use objects to model "things" using code.
 
+### Object Literal
+
 ```js
 // OBJECT LITERAL NOTATION
 var myObject = {
@@ -192,7 +194,25 @@ myCoffee.reheat();
 reheat(); // won't work because it's a method and requires and object it is associated to
 ```
 
-### Object Constructer
+### Object Constructor
 
-- Function used to create an object
+- Function used to create **multiple instances** of an object
   - Best practice to name the function with the first letter capitalized
+  - Each instance inherits the properties and methods of its constructor
+
+```js
+function Friend(name, tshirtColor) {
+  this.name = name;
+  this.tshirtColor = tshirtColor;
+}
+
+// create an instance of the constructor
+var joe = new Friend("Joe", "red");
+
+
+// in object literal notation:
+var joe = {
+  name: "Joe",
+  tshirtColor: "red"
+};
+```
