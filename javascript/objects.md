@@ -1,6 +1,6 @@
 # Objects
 
-An **object** is a collection of **properties**, which are described in the form of **key/value** pairs. In other words, key/value pairs make up a property and its value, which is assigned to an object. We can use objects to model "things" using code.
+An **object** is a collection of **properties**, which are described in the form of **key/value** pairs. In other words, key/value pairs make up a property name and its value, which is assigned to an object. We can use objects to model "things" using code.
 
 Three main types of objects:
 1. **Host objects** - objects defined by the environment in which your code is run. E.g. a web browser is a host environment that have the defined objects: `document`, `window`, `console`, etc
@@ -24,9 +24,9 @@ Procedural | Object Oriented
 Step-by-step instructions read from top to bottom | Objects pass code back and forth amongst one another
 
 
-## Creating Objects <a name="creatingobj"></a>
+## <a name="creatingobj"></a> Creating Objects 
 
-### Object Literal <a name="objliteral"></a>
+### <a name="objliteral"></a> Object Literal 
 
 ```js
 // OBJECT LITERAL NOTATION
@@ -71,7 +71,7 @@ myCoffee.reheat();
 reheat(); // won't work because it's a method and requires and object it is associated to
 ```
 
-### Object Constructor <a name="objconstrct"></a>
+### <a name="objconstrct"></a> Object Constructor 
 
 - Defines a template for an object, also known as a **prototype**.
 - Function used to create **multiple instances** of an object
@@ -134,7 +134,7 @@ var joe = new Friend('Joe', 'red');
 joe.speak(); // logs 'Hello!'
 ```
 
-## The Global Object <a name="globalobjects"></a>
+## <a name="globalobjects"></a> The Global Object
 
 - In js when we're creating variables, functions, and objects, they become properties of the **global object**.
   - The window is the **global object** when the host environment is the web. When we write a function that isn't associated with an object, it becomes a method of the global object.
@@ -156,7 +156,7 @@ function alert() {
 
 
 
-## Local & Global Scope <a name="scopes"></a>
+## <a name="scopes"></a> Local & Global Scope
 
 - Variables in the **global scope** (global variables) can be accessed, changed, and used anywhere in the code; Can be risky since it can accidentally overwrite other code
   - Should be careful when creating things that are global in scope, especially when js libaries such as jQuery is involved.
@@ -167,4 +167,63 @@ function alert() {
   
   
   
-## Properties <a name="properties"></a>
+## <a name="properties"></a> Properties
+
+Properties with **dot notation vs. bracket notation**
+
+```js
+var cat = {
+  name: 'Fluffy',
+  color: 'white'
+}
+
+console.log(cat.color) // dot notation
+console.log(cat['color']) // bracket notation
+
+cat['eye color'] = 'green'
+console.log(cat['eye color']) // returns 'green'
+```
+
+Why would you do brackets instead of dot notation?
+- Useful in creating an object with the values entered by a user
+
+### Property descriptor
+
+- Properties are more than just a name and value! Each property has a **property descriptor** that we can use to see the attributes of that property.
+
+```js
+
+// get the property descriptor for the 'name' property
+Object.getOwnPropertyDescriptor(cat, 'name') 
+/* returns:
+Object {
+  value: Fluffy,
+  writable: true, // this attribute defines whether the property's value can be changed from its initial value
+  enumerable: true,
+  configurable: true
+}
+*/
+```
+
+#### Changing the property attributes
+
+- `writable` attribute 
+
+```js
+// change the writable attribute to false
+Object.defineProperty(cat, 'name', {writeable: false});
+cat.name = 'Oreo'; // in strict mode this throws an error: cannot assign to read only property
+```
+
+But what if we have the `cat.name` property as an object?
+
+```js
+var cat = {
+  // have name property point to an object
+  name: { 
+    // with the properties first and last
+    first: 'Fluffy', 
+    last: 'Jones'
+  },
+  color: 'white'
+}
