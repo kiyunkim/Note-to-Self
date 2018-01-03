@@ -20,6 +20,7 @@
 ## Quotes
 
 - `<blockquote>` block-level quote
+  - `<blockquote cite="http://google.com"></blockquote>` to cite use the cite attribute, though it won't be indicated on the page 
 - `<q>` inline quote
 
 ## To Look up:
