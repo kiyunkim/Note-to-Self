@@ -7,6 +7,14 @@ Three main types of objects:
 2. **Core objects** - objects defined by and built into the js language. E.g. `Math`, `Date`, `Number`
 3. Everything else - objects defined by code's author, or objects defined by js libraries
 
+Quick links:
+- [Creating Objects](#creatingobj)
+  - [Object literals](#objliteral)
+  - [Object constructors](#objconstrct)
+- [Global objects](#globalobjects)
+- [Local and global scopes](#scopes)
+- [Properties](#properties)
+
 ## Object Oriented Programming
 
 - Revolves around objects and how code moves back and forth between objects
@@ -16,9 +24,9 @@ Procedural | Object Oriented
 Step-by-step instructions read from top to bottom | Objects pass code back and forth amongst one another
 
 
-## Creating Objects 
+## Creating Objects <a name="creatingobj"></a>
 
-### Object Literal
+### Object Literal <a name="objliteral"></a>
 
 ```js
 // OBJECT LITERAL NOTATION
@@ -63,7 +71,7 @@ myCoffee.reheat();
 reheat(); // won't work because it's a method and requires and object it is associated to
 ```
 
-### Object Constructor
+### Object Constructor <a name="objconstrct"></a>
 
 - Defines a template for an object, also known as a **prototype**.
 - Function used to create **multiple instances** of an object
@@ -87,8 +95,46 @@ var joe = {
 };
 ```
 
+#### `Object.create()`
 
-## The Global Object
+- What's used behind the scenes for object literals and constructors
+
+```js
+// use Object.create() function to create new object
+// pass in the object that will become the prototype for the new object
+var joe = Object.create(Object.prototype,
+  {
+    name: {
+      value: 'Joe',
+      enumerable: true,
+      writable: true,
+      configurable: true
+    },
+    tshirtColor: {
+      value: 'red',
+      enumerable: true,
+      writable: true,
+      configurable: true
+    }
+  });
+```
+#### Create object using ES6 classes
+```js
+class Friend {
+  constructor(name, tshirtColor) {
+    this.name = name
+    this.tshirtColor = tshirtColor
+  }
+  speak() { // add method to object
+    console.log('Hello!')
+  }
+}
+
+var joe = new Friend('Joe', 'red');
+joe.speak(); // logs 'Hello!'
+```
+
+## The Global Object <a name="globalobjects"></a>
 
 - In js when we're creating variables, functions, and objects, they become properties of the **global object**.
   - The window is the **global object** when the host environment is the web. When we write a function that isn't associated with an object, it becomes a method of the global object.
@@ -108,7 +154,9 @@ function alert() {
 };
 ```
 
-## Local & Global Scope
+
+
+## Local & Global Scope <a name="scopes"></a>
 
 - Variables in the **global scope** (global variables) can be accessed, changed, and used anywhere in the code; Can be risky since it can accidentally overwrite other code
   - Should be careful when creating things that are global in scope, especially when js libaries such as jQuery is involved.
@@ -119,3 +167,4 @@ function alert() {
   
   
   
+## Properties <a name="properties"></a>
