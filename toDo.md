@@ -1,11 +1,12 @@
 ## Languages, Frameworks, Libraries 
-- AJAX
+- JSON
 - Bootstrap
 - AngularJS
 - ReactJS
 - Node.js
-- CreateJS
+- AJAX
 - MySQL
+- CreateJS
 
 ## Vocab 
 
