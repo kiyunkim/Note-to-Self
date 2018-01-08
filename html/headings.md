@@ -1,6 +1,6 @@
 # Headings 
 
-- Google says you can use multiple h1 elements<sup>[1](#googleh1)</sup>, but what does that mean for SEO and screen readers?
+- Google says you can use multiple h1 elements<sup>[1](#googleh1)</sup>, but what does that mean for SEO and assistive technology?
 
 ## Readings
 
