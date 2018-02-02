@@ -3,7 +3,30 @@
   
 General notes for myself to keep track of my learning.  
 <sup>*Notes in this repository is for personal use, and may not contain complete information on each topic.</sup>
-  
+
+
+## Contents
+
+- CSS
+  - [LESS](https://github.com/kiyunkim/notes/blob/master/css/less.md)
+  - [SASS](https://github.com/kiyunkim/notes/blob/master/css/sass.md)
+- HTML
+  - Headings
+  - Resources
+  - Misc.
+- JavaScript
+  - Basics
+  - Objects
+- SQL
+  - Commands
+  - Notes
+- Command Line
+  - Exercises
+  - Resources
+  - Vocab
+- Agile/Scrum + JIRA
+- Responsive Design
+- To Do
   
   
 
