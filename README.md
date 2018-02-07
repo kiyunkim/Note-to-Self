@@ -20,10 +20,10 @@ General notes for myself to keep track of my learning.
 - SQL
   - Commands
   - Notes
-- Command Line
-  - Exercises
+- [Command Line](https://github.com/kiyunkim/notes/tree/master/command%20line)
+  - [Exercises](https://github.com/kiyunkim/notes/blob/master/command%20line/exercises.md)
   - Resources
-  - Vocab
+  - [Vocab](https://github.com/kiyunkim/notes/blob/master/command%20line/vocab.md)
 - Agile/Scrum + JIRA
 - Responsive Design
 - To Do
