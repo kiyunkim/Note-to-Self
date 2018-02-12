@@ -1,4 +1,4 @@
-# Design Pattersn
+# Design Patterns
 
 #### IRL Design Patterns
 
