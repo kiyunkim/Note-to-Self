@@ -14,6 +14,7 @@ Quick links:
 - [Global objects](#globalobjects)
 - [Local and global scopes](#scopes)
 - [Properties](#properties)
+- [Prototypes](#prototypes)
 
 ## Object Oriented Programming
 
@@ -227,3 +228,29 @@ var cat = {
   },
   color: 'white'
 }
+```
+
+## <a name="prototypes"></a> Prototypes
+
+- **A function's prototype:** The object *instance* that will become the prototype for all objects created using this function as a constructor.
+- **An object's prototype:** The object *instance* from which the object is inherited.
+
+#### Prototypal Inheritance Chains
+
+```
+function Animal(voice) {
+  this.voice = voice || 'Roar';
+}
+Animal.prototype.speak = function() {
+  console.log(this.voice);
+}
+
+function Cat(name, color) {
+  Animal.call(this, 'Meow');
+  this.name = name;
+  this.color = color;
+}
+Cat.prototype = Object.create(Animal.prototype); // Object.create instead of new to prevent function from running while declaring
+Cat.prototype.constructor = Cat;
+
+```
