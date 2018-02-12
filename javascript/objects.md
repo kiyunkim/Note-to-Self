@@ -200,7 +200,7 @@ Object.getOwnPropertyDescriptor(cat, 'name')
 Object {
   value: Fluffy,
   writable: true, // this attribute defines whether the property's value can be changed from its initial value
-  enumerable: true,
+  enumerable: true, // this property can be looped over using for..in loops
   configurable: true
 }
 */
@@ -237,7 +237,7 @@ var cat = {
 
 #### Prototypal Inheritance Chains
 
-```
+```js
 function Animal(voice) {
   this.voice = voice || 'Roar';
 }
@@ -252,5 +252,29 @@ function Cat(name, color) {
 }
 Cat.prototype = Object.create(Animal.prototype); // Object.create instead of new to prevent function from running while declaring
 Cat.prototype.constructor = Cat;
+
+```
+#### Classes 
+
+- Class syntax generally work the same as constructor functions (difference: class constructor isnt' a function, it's a class; members of classes are not enumerable by default)
+
+```js
+class Animal {
+  constructor(voice) {
+    this.voice = voice || 'Roar';
+  }
+  speak() {
+    console.log(this.voice);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, color) {
+    super('Meow'); // for constructor(voice) in the parent's class's constructor
+    this.name = name;
+    this.color = color;
+  }
+}
+
 
 ```
