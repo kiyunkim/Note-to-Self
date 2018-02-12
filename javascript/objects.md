@@ -72,7 +72,7 @@ myCoffee.reheat();
 reheat(); // won't work because it's a method and requires and object it is associated to
 ```
 
-### <a name="objconstrct"></a> Object Constructor 
+### <a name="objconstrct"></a> Object Constructor `new`
 
 - Defines a template for an object, also known as a **prototype**.
 - Function used to create **multiple instances** of an object
@@ -88,12 +88,6 @@ function Friend(name, tshirtColor) {
 // create an instance of the constructor
 var joe = new Friend("Joe", "red");
 
-
-// in object literal notation:
-var joe = {
-  name: "Joe",
-  tshirtColor: "red"
-};
 ```
 
 #### `Object.create()`
