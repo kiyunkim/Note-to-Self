@@ -187,6 +187,14 @@ console.log(cat['eye color']) // returns 'green'
 
 Why would you do brackets instead of dot notation?
 - Useful in creating an object with the values entered by a user
+  ```js
+  var obj = {}; // empty object
+  var val = 'value';
+  obj[val] = 'new value';
+  console.log(obj[val]); // returns 'new value'
+  
+  
+  ```
 
 ### Property descriptor
 
