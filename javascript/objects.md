@@ -14,6 +14,7 @@ Quick links:
 - [Global objects](#globalobjects)
 - [Local and global scopes](#scopes)
 - [Properties](#properties)
+- [Prototypes](#prototypes)
 
 ## Object Oriented Programming
 
@@ -71,7 +72,7 @@ myCoffee.reheat();
 reheat(); // won't work because it's a method and requires and object it is associated to
 ```
 
-### <a name="objconstrct"></a> Object Constructor 
+### <a name="objconstrct"></a> Object Constructor `new`
 
 - Defines a template for an object, also known as a **prototype**.
 - Function used to create **multiple instances** of an object
@@ -87,12 +88,6 @@ function Friend(name, tshirtColor) {
 // create an instance of the constructor
 var joe = new Friend("Joe", "red");
 
-
-// in object literal notation:
-var joe = {
-  name: "Joe",
-  tshirtColor: "red"
-};
 ```
 
 #### `Object.create()`
@@ -186,6 +181,14 @@ console.log(cat['eye color']) // returns 'green'
 
 Why would you do brackets instead of dot notation?
 - Useful in creating an object with the values entered by a user
+  ```js
+  var obj = {}; // empty object
+  var val = 'value';
+  obj[val] = 'new value';
+  console.log(obj[val]); // returns 'new value'
+  
+  
+  ```
 
 ### Property descriptor
 
@@ -199,7 +202,7 @@ Object.getOwnPropertyDescriptor(cat, 'name')
 Object {
   value: Fluffy,
   writable: true, // this attribute defines whether the property's value can be changed from its initial value
-  enumerable: true,
+  enumerable: true, // this property can be looped over using for..in loops
   configurable: true
 }
 */
@@ -227,3 +230,53 @@ var cat = {
   },
   color: 'white'
 }
+```
+
+## <a name="prototypes"></a> Prototypes
+
+- **A function's prototype:** The object *instance* that will become the prototype for all objects created using this function as a constructor.
+- **An object's prototype:** The object *instance* from which the object is inherited.
+
+#### Prototypal Inheritance Chains
+
+```js
+function Animal(voice) {
+  this.voice = voice || 'Roar';
+}
+Animal.prototype.speak = function() {
+  console.log(this.voice);
+}
+
+function Cat(name, color) {
+  Animal.call(this, 'Meow');
+  this.name = name;
+  this.color = color;
+}
+Cat.prototype = Object.create(Animal.prototype); // Object.create instead of new to prevent function from running while declaring
+Cat.prototype.constructor = Cat;
+
+```
+#### Classes 
+
+- Class syntax generally work the same as constructor functions (difference: class constructor isnt' a function, it's a class; members of classes are not enumerable by default)
+
+```js
+class Animal {
+  constructor(voice) {
+    this.voice = voice || 'Roar';
+  }
+  speak() {
+    console.log(this.voice);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, color) {
+    super('Meow'); // for constructor(voice) in the parent's class's constructor
+    this.name = name;
+    this.color = color;
+  }
+}
+
+
+```
