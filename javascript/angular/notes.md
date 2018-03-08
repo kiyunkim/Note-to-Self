@@ -41,7 +41,7 @@ A **module** contains the different components of an AngularJS app.
 
  CODECADEMY NOTES:
 
-**`ng-app`** (`ng` for Angular) is a <a name="directive"></a>**directive** that tells AngularJS that the `myApp` **module** will live within the `<body>` element, termed the application's **scope.**   
+**`ng-app`** is a <a name="directive"></a>**directive** that tells AngularJS that the `myApp` **module** will live within the `<body>` element, termed the application's **scope.**   
 In other words, we used the `ng-app` **directive** to define the application **scope**. The `ng-app` allows Angular to take control of where the directive applies, in this case the `<body>`.
 
 
