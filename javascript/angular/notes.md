@@ -24,14 +24,25 @@ A **module** contains the different components of an AngularJS app.
   ..
 </body>
 ```
->Add `ng-app="myApp` to the `<body>` in _index.html_.  
+>Add `ng-app="myApp"` to the `<body>` in _index.html_.  
 
-- `ng` stands for Angular
-- Only one `ng-app` directive is allowed per page/DOM
+- `ng` = Angular
+- One `ng-app` per page/DOM
 
-<!--- CODECADEMY NOTES:
 
-**`ng-app`** (`ng` for Angular) is a <a name="directive"></a>**directive** that tells AngularJS that the `myApp` **module** will live within the `<body>` element, termed the application's **scope.** In other words, we used the `ng-app` **directive** to define the application **scope**. The `ng-app` allows Angular to take control of where the directive applies, in this case the `<body>`.
+## Controllers
+
+- Builds model
+- Model contains data
+- Controller grabs that data
+
+`ng-controller`
+
+
+ CODECADEMY NOTES:
+
+**`ng-app`** (`ng` for Angular) is a <a name="directive"></a>**directive** that tells AngularJS that the `myApp` **module** will live within the `<body>` element, termed the application's **scope.**   
+In other words, we used the `ng-app` **directive** to define the application **scope**. The `ng-app` allows Angular to take control of where the directive applies, in this case the `<body>`.
 
 
 ```javascript
@@ -57,5 +68,3 @@ app.controller('MainController', ['$scope', function($scope) {
 The double curly braces `{{ }}` are **binding expressions** in Angular, sometimes called mustaches or handlebars. Angular looks for these binding expressions and tries to evaluate the expressions inside.
 
 Binding expressions can also look at data you have retrieved from a web server.
-
---->
