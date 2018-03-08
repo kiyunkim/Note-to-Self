@@ -1,53 +1,22 @@
-/* functions as abstractions */
-var work = function() {
-  console.log("working hard");
-};
+(function() {
+  // create a module called myApp
+  var app = angular.module("myApp", []);
 
-var doWork = function(theWork){
-  console.log("starting");
+  var MainController = function($scope) {
+    // things attacehd to $scope will be the model
+  
+    $scope.message = "Hello World";
+    
+    var me = {
+      firstName: "Kiyun",
+      lastName: "Kim"
+    }
 
-  try {
-    theWork();
-  }
-  catch(err){
-    console.log(err);
-  }
-
-  console.log("end");
-}
-
-doWork(work);
-
-
-
-/* functions to build modules */
-var createWorker = function() {
-  var workCount = 0;
-
-  var task1 = function() {
-    workCount += 1;
-    console.log("task1" + workCount);
-  }
-  var task2 = function() {
-    workCount++;
-    console.log("task2" + workCount);
+    $scope.me = me;
   }
 
-  return {
-    job1: task1,
-    job2: task2
-  }
-};
-
-var worker = createWorker();
-
-worker.job1();
-worker.job2();
-worker.job2();
-worker.job2();
+  // '$http',
+  app.controller('MainController', ['$scope', MainController]);
 
 
-/* immediately invoked function expression (IIFE) */
-(function(){
-  // variable inside here won't be global
 }());

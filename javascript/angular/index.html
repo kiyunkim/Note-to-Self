@@ -1,19 +1,46 @@
 <!DOCTYPE html>
-<html ng-app><!-- the angular directive -->
+<html ng-app="myApp"><!-- the angular directive -->
 <head>
   <title>Angular</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="style.css">
+  <style>
+    pre { 
+      background: #ddd;
+    }
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 
-<body>
+<body ng-controller="MainController"><!-- the controller directive -->
   {{ 253/34 }} 
+  <h1>{{message}}</h1> 
+  <pre ng-non-bindable>the {{ binding expression }} moves data from the $scope into the view</pre>
+  <p>Length of "{{message}}":  {{message.length}}</p>
+
+  <pre ng-non-bindable>
+&lt;body ng-app&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+
+  &lt;div ng-controller="DateCtrl"&gt;
+    Time is: {{date}}
+  &lt;/div&gt;
+
+  &lt;div ng-controller="QuoteCtrl"&gt;
+    &lt;p&gt;Stock: {{stock.symbol}}&lt;/p&gt;
+    &lt;p&gt;Price: {{stock.price}}&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div ng-controller="ChartCtrl"&gt;
+    &lt;img ng-src="{{chart.source}}" alt="{{chart.desc}}"&gt;
+  &lt;/div&gt;
+
+&lt;/body&gt;</pre>
+
+  <h2>Hi, my name is {{me.firstName +' '+ me.lastName}}</h2>
 
 
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
   <noscript>
     <p>This web page requires JavaScript to be enabled.</p>
   </noscript>
