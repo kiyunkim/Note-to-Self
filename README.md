@@ -32,20 +32,15 @@ General notes for myself to keep track of my learning.
 - Responsive Design
 - To Do
   
-
----
   
-
-<details>
-  <summary>Markdown Resources</summary>
+## Markdown Resources
   
   - [Github's Mastering Makrdown](https://guides.github.com/features/mastering-markdown/)
   - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  - [Markdown: Syntax by John Gruber](https://daringfireball.net/projects/markdown/syntax#span)
 
-</details>
 
-
-<!---
+```md
 **This is how to bold.**
 
 *This is how to emphasize.*
@@ -60,9 +55,13 @@ General notes for myself to keep track of my learning.
   - As well as an asterisk
 * Both will come out as a bullet point
 
-## Refs:
-[Github](https://guides.github.com/features/mastering-markdown/)
+<details>
+  <summary>Markdown Resources</summary>
+  
+  - [Github's Mastering Makrdown](https://guides.github.com/features/mastering-markdown/)
+  - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+  - https://daringfireball.net/projects/markdown/syntax#span
+</details>
 
-[https://daringfireball.net/projects/markdown/syntax#span](https://daringfireball.net/projects/markdown/syntax#span)
-
- testing a comment --->
+<!--- testing a comment --->
+```
