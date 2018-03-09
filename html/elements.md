@@ -18,7 +18,7 @@
   
 - ### Details/Summary
   - ```html
-    <details>
+    <details open>
       <summary>Title</summary>
       <p>Hidden content</p>
     </details>
