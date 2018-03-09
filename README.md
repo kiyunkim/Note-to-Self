@@ -14,9 +14,13 @@ General notes for myself to keep track of my learning.
   - Headings
   - Resources
   - Misc.
-- JavaScript
+- [JavaScript](https://github.com/kiyunkim/notes/blob/master/javascript)
+  - [AngularJS](https://github.com/kiyunkim/notes/blob/master/javascript/angular)
+  - [JSON, AJAX](https://github.com/kiyunkim/notes/tree/master/javascript/ajax%2Cjson)
   - Basics
   - Objects
+  - Design Patterns
+- C#
 - SQL
   - Commands
   - Notes
@@ -28,6 +32,8 @@ General notes for myself to keep track of my learning.
 - Responsive Design
 - To Do
   
+
+---
   
 
 <details>
@@ -35,7 +41,6 @@ General notes for myself to keep track of my learning.
   
   - [Github's Mastering Makrdown](https://guides.github.com/features/mastering-markdown/)
   - [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-
 
 </details>
 
