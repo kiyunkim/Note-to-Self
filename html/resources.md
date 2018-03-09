@@ -7,3 +7,12 @@
 
 - [The Web platform: Browser technologies](https://platform.html5.org/)
 - [HTML5 Please](http://html5please.com/)
+
+## HTML5 Boilerplate
+
+- [HTML5 Boilerplate](https://html5boilerplate.com/)
+- [Initializr](http://www.initializr.com/)
+
+# Other
+
+- Modernizr
