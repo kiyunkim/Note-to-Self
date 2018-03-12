@@ -37,12 +37,12 @@
     // wait for data to load successfully
     // run when readyState = 4
     xhr.onload = function() {
-    if (xhr.status === 200){
-      var myStuff = JSON.parse(xhr.responseText);
-      console.log(myStuff);
-      console.log(myStuff.kiyun);
-      console.log(myStuff.ppl['0'].age);
-    }
+      if (xhr.status === 200){
+        var myStuff = JSON.parse(xhr.responseText);
+        console.log(myStuff);
+        console.log(myStuff.kiyun);
+        console.log(myStuff.ppl['0'].age);
+      }
     }
     xhr.send();
     document.getElementById('me').innerHTML = myObject.name;
