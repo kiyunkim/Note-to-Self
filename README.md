@@ -7,13 +7,15 @@ General notes for myself to keep track of my learning.
 
 ## Contents
 
+- Games
+  - Resources
 - CSS
   - [LESS](https://github.com/kiyunkim/notes/blob/master/css/less.md)
   - [SASS](https://github.com/kiyunkim/notes/blob/master/css/sass.md)
-- HTML
+- [HTML](https://github.com/kiyunkim/notes/blob/master/html)
+  - Elements
   - Headings
   - Resources
-  - Misc.
 - [JavaScript](https://github.com/kiyunkim/notes/blob/master/javascript)
   - [AngularJS](https://github.com/kiyunkim/notes/blob/master/javascript/angular)
   - [JSON, AJAX](https://github.com/kiyunkim/notes/tree/master/javascript/ajax%2Cjson)
@@ -26,7 +28,7 @@ General notes for myself to keep track of my learning.
   - Notes
 - [Command Line](https://github.com/kiyunkim/notes/tree/master/command%20line)
   - [Exercises](https://github.com/kiyunkim/notes/blob/master/command%20line/exercises.md)
-  - Resources
+  - [Resources](https://github.com/kiyunkim/notes/blob/master/command%20line/resources.md)
   - [Vocab](https://github.com/kiyunkim/notes/blob/master/command%20line/vocab.md)
 - Agile/Scrum + JIRA
 - Responsive Design

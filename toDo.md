@@ -1,6 +1,8 @@
-## Languages, Frameworks, Libraries 
+## To Learn
+
 - JSON
 - Bootstrap
+- TypeScript
 - AngularJS
 - ReactJS
 - Node.js
@@ -13,4 +15,5 @@
 - API
 
 ## Misc
+
 - CSS Grid
