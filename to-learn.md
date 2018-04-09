@@ -1,19 +1,14 @@
 ## To Learn
 
-- JSON
+- **JSON**
+- AJAX
+- AngularJS
 - Bootstrap
 - TypeScript
-- AngularJS
 - ReactJS
 - Node.js
-- AJAX
 - MySQL
-- CreateJS
 
 ## Vocab 
 
 - API
-
-## Misc
-
-- CSS Grid
