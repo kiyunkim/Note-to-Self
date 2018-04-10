@@ -46,7 +46,12 @@ General notes for myself to keep track of my learning.
   - Commands
   - Notes
 </details>
-  
+
+- Agile, Scrum
+- Game Resources
+- Responsive Design
+- To Learn
+- Web Accessibility
   
 ## Markdown Resources
   
