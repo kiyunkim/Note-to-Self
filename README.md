@@ -7,32 +7,45 @@ General notes for myself to keep track of my learning.
 
 ## Contents
 
-- Games
-  - Resources
-- CSS
-  - [LESS](https://github.com/kiyunkim/notes/blob/master/css/less.md)
-  - [SASS](https://github.com/kiyunkim/notes/blob/master/css/sass.md)
-- [HTML](https://github.com/kiyunkim/notes/blob/master/html)
+<details>
+  <summary>C#</summary>
+
+</details>
+<details>
+  <summary>Command Line</summary>
+
+  - [Exercises](https://github.com/kiyunkim/notes/blob/master/command%20line/exercises.md)
+  - [Resources](https://github.com/kiyunkim/notes/blob/master/command%20line/resources.md)
+  - [Vocab](https://github.com/kiyunkim/notes/blob/master/command%20line/vocab.md)
+</details>
+<details>
+  <summary>CSS</summary>
+
+- [LESS](https://github.com/kiyunkim/notes/blob/master/css/less.md)
+- [SASS](https://github.com/kiyunkim/notes/blob/master/css/sass.md)
+</details>
+<details>
+  <summary>HTML</summary>
+
   - Elements
   - Headings
   - Resources
-- [JavaScript](https://github.com/kiyunkim/notes/blob/master/javascript)
+</details>
+<details>
+  <summary>JavaScript</summary>
+
   - [AngularJS](https://github.com/kiyunkim/notes/blob/master/javascript/angular)
   - [JSON, AJAX](https://github.com/kiyunkim/notes/tree/master/javascript/ajax%2Cjson)
   - Basics
   - Objects
   - Design Patterns
-- C#
-- SQL
+</details>
+<details>
+  <summary>SQL</summary>
+
   - Commands
   - Notes
-- [Command Line](https://github.com/kiyunkim/notes/tree/master/command%20line)
-  - [Exercises](https://github.com/kiyunkim/notes/blob/master/command%20line/exercises.md)
-  - [Resources](https://github.com/kiyunkim/notes/blob/master/command%20line/resources.md)
-  - [Vocab](https://github.com/kiyunkim/notes/blob/master/command%20line/vocab.md)
-- Agile/Scrum + JIRA
-- Responsive Design
-- To Do
+</details>
   
   
 ## Markdown Resources
