@@ -1,6 +1,7 @@
 ## To Learn
 
 - **JSON**
+- npm
 - AJAX
 - AngularJS
 - Bootstrap
