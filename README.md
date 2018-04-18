@@ -47,11 +47,11 @@ General notes for myself to keep track of my learning.
   - Notes
 </details>
 
-- Agile, Scrum
-- Game Resources
-- Responsive Design
-- To Learn
-- Web Accessibility
+- [Agile, Scrum](https://github.com/kiyunkim/notes/blob/master/agile-scrum.md)
+- [Game Resources](https://github.com/kiyunkim/notes/blob/master/game-resources.md)
+- [Responsive Design](https://github.com/kiyunkim/notes/blob/master/responsive-design.md)
+- [To Learn](https://github.com/kiyunkim/notes/blob/master/to-learn.md)
+- [Web Accessibility](https://github.com/kiyunkim/notes/blob/master/web-accessibility.md)
   
 ## Markdown Resources
   
