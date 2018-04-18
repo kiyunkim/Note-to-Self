@@ -25,5 +25,9 @@ Basis of most web accessibility law, based on four principles that spells out PO
 - Make sure content is clearly written and easy to read
 - Make JavaScript accessible
 
+### Readings
+
+[A simple introduction to web accessibility](https://www.creativebloq.com/netmag/simple-introduction-web-accessibility-7116888)
+
 #### Sources
 - [WebAIM](https://webaim.org/)
