@@ -16,7 +16,7 @@ General notes for myself to keep track of my learning.
 
   - [Exercises](https://github.com/kiyunkim/notes/blob/master/command%20line/exercises.md)
   - [Resources](https://github.com/kiyunkim/notes/blob/master/command%20line/resources.md)
-  - [Vocab](https://github.com/kiyunkim/notes/blob/master/command%20line/vocab.md)
+  - [Commands](https://github.com/kiyunkim/notes/blob/master/command%20line/commands.md)
 </details>
 <details>
   <summary>CSS</summary>
