@@ -1,12 +1,8 @@
-[learnpythonthehardway](https://learnpythonthehardway.org/book/appendix-a-cli/introduction.html)  
-[Intro to Mac OS X Command Line - treehouse](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
-
-## Commands
+# Commands
 
 Command Name | Description
 ---------- | -----------
 `pwd`|print working directory
-`hostname`|my computer network name
 `mkdir`|make directory
 `cd`|change directory
 `ls`|list directory
@@ -15,6 +11,7 @@ Command Name | Description
 `popd`|pop directory
 `cp`|copy a file or directory
 `mv`|move (or rename) a file or directory
+`hostname`|my computer network name
 `touch` | create empty file
 `less`|page through a file
 `cat`|print the whole file
@@ -43,7 +40,7 @@ Option Name | Description
   - In computing, a **shell** is a user interface for access to an operating system's services. In general, operating system shells use either a **command-line interface** (CLI) or graphical user interface (GUI), depending on a computer's role and particular operation. It is named a shell because it is the outermost layer around the operating system kernel.
 - **Folder = Directory**
 - **Session**
-  - Do not type in the `$` (Unix) or `>` (Windows). That's just showing you my **session** so you can see what I got.
+  - Do not type in the `$` (Unix) or `>` (Windows). That's just showing the **session**
 - **Prompt**
   - You can then see what I have for output followed by another `$` or `>` **prompt**. That content is the output and you should see the same output.
   - This is the beginning of the command line. It usually provides some contextual information like who you are, where you are and other useful info. It typically ends in a $ . After the prompt is where you will be typing commands.
@@ -66,3 +63,9 @@ Option Name | Description
 - What is:  
   `cp -r [directory1] [directory2]` -- copy directory1 and its contents  
   `rm -rf [directory]` (remove directory and its contents)
+  
+## Sources
+
+- [LearnPythonTheHardWay](https://learnpythonthehardway.org/book/appendix-a-cli/introduction.html)  
+- [Intro to Mac OS X Command Line - treehouse](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
+
