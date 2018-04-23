@@ -14,6 +14,14 @@
 
 # Command line
 
-## Unix
-
 - case sensitive
+
+Use Tab key to autocomplete
+
+## Unix Prompt
+
+- User
+- System or server name (host name of the machine)
+- Path of current working directory
+- `$` or `>` normal user
+- \# superuser
