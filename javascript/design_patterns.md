@@ -21,30 +21,28 @@ Visibility into State Changes<br>(object reactions to another object's changes)|
 
 Patterns that deal with the creation of new instances of an object
 
-1. Constructor pattern
+  1. Constructor pattern
+      > Constructor function:
+      ```js
+      var Task = function(taskName) {
+        this.taskName = taskName;
+        this.completed = false;
 
-  Constructor function:
-  ```js
-  var Task = function(taskName) {
-    this.taskName = taskName;
-    this.completed = false;
-    
-    this.complete = function() {
-      console.log('completing task: ' + task.taskName);
-      this.completed = true;
-    }
-  }
-  
-  // copies of the object Task
-  var task1 = new Task('create demo');
-  var task2 = new Task('run demo');
-  
-  task1.complete();
-  ```
-  
-2. Module pattern
-3. Factory
-4. Singleton
+        this.complete = function() {
+          console.log('completing task: ' + task.taskName);
+          this.completed = true;
+        }
+      }
+
+      // copies of the object Task
+      var task1 = new Task('create demo');
+      var task2 = new Task('run demo');
+
+      task1.complete();
+      ```
+  2. Module pattern
+  3. Factory
+  4. Singleton
 
 ### Structural
 
