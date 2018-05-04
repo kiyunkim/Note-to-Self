@@ -102,6 +102,7 @@ for (i = 0; i <= 10; i++) {
   3. Update the value after checking it is true (add by 1, i++)
 
 #### Do While Loops
+
 - 'Do X while Y is true'
 ```js
 var i = 0;
@@ -123,6 +124,7 @@ while(i < 11) {
 - Useful when you don't know how many times you need the loop to run
 
 ## Functions
+
 ```js
 // declare new function
 function newFunction(parameter) {
@@ -131,7 +133,9 @@ function newFunction(parameter) {
 // call or invoke the function by passing an argument
 newFunction(argument);
 ```
+
 ## Arrays 
+
 ```js
 // arrays start at 0
 
