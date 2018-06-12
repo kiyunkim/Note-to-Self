@@ -1,10 +1,10 @@
 ## To Learn
 
 - **JSON**
-- npm
+- _npm_
 - AJAX
 - AngularJS
-- Bootstrap
+- _Bootstrap_
 - TypeScript
 - ReactJS
 - Node.js
