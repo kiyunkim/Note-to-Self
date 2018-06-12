@@ -1,0 +1,34 @@
+# NPM
+
+- Node Package Manager
+- Software registry that contains 600k+ packages (building blocks of code)
+
+#### Package vs Module
+
+- **Module**: single js file that has some reasonable functionality
+- **Package**: directory with one or more modules inside of it and a `package.json` file that contains metadata about the package
+
+## `package.json`
+
+- Contains metadata about the project
+- Tracks dependencies
+- Generate with `npm init`
+- `dependencies` are for use in production
+- `devDependencies` are used in development, e.g. testing tool, local server
+
+## Commands
+
+`npm init`  
+`npm init --yes` for instant init  
+`npm install <module>` install the module `<module>`  
+`npm install` install all dependencies from `package.json`  
+`npm i` shorthand for install  
+`npm install <module> --save` install `<module>` and save to `package.json`as an entry in `dependencies`  
+`npm install <module> --save-dev` install `<module>` and save to `package.json`as an entry in `devDependencies`  
+`npm install <module> --global'/`npm install <module> -g` install globally (by default it will install them to a system directory and not a local one)
+
+
+## Sources
+
+[Absolute Beginner's Guide to Using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
+[What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
