@@ -1,7 +1,7 @@
 
 <h1 align="center">Notes</h1>
   
-General notes for myself to keep track of my learning.  
+General notes for myself.  
 <sup>*Notes in this repository is for personal use, and may not contain complete information on each topic.</sup>
 
 
@@ -14,9 +14,9 @@ General notes for myself to keep track of my learning.
 <details>
   <summary>Command Line</summary>
 
+  - [Commands](https://github.com/kiyunkim/notes/blob/master/command%20line/commands.md)
   - [Exercises](https://github.com/kiyunkim/notes/blob/master/command%20line/exercises.md)
   - [Resources](https://github.com/kiyunkim/notes/blob/master/command%20line/resources.md)
-  - [Commands](https://github.com/kiyunkim/notes/blob/master/command%20line/commands.md)
 </details>
 <details>
   <summary>CSS</summary>
@@ -49,6 +49,7 @@ General notes for myself to keep track of my learning.
 
 - [Agile, Scrum](https://github.com/kiyunkim/notes/blob/master/agile-scrum.md)
 - [Game Resources](https://github.com/kiyunkim/notes/blob/master/game-resources.md)
+- [npm](https://github.com/kiyunkim/notes/blob/master/npm.md)
 - [Responsive Design](https://github.com/kiyunkim/notes/blob/master/responsive-design.md)
 - [To Learn](https://github.com/kiyunkim/notes/blob/master/to-learn.md)
 - [Web Accessibility](https://github.com/kiyunkim/notes/blob/master/web-accessibility.md)
