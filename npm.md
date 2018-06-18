@@ -23,12 +23,39 @@
 `npm install <module>` install the module `<module>`  
 `npm install` install all dependencies from `package.json`  
 `npm i` shorthand for install  
-`npm install <module> --save` install `<module>` and save to `package.json`as an entry in `dependencies`  
+`npm install <module> --save` install `<module>` and save to `package.json`as an entry in `dependencies` **This is now the default in npm 5+**
 `npm install <module> --save-dev` install `<module>` and save to `package.json`as an entry in `devDependencies`  
-`npm install <module> --global'/`npm install <module> -g` install globally (by default it will install them to a system directory and not a local one)
+`npm install <module> --global` install globally (by default it will install them to a system directory and not a local one)
+`npm outated` view version details of outdated dependencies
 
+```json
+"dependencies": {
+  "normalize.css": "*"
+}
+```
+Accept any major version updates
+
+
+[Shorthands](https://docs.npmjs.com/misc/config#shorthands-and-other-cli-niceties)
+
+Flag | Shortcut
+---------- | -----------
+`--version` | `-v`
+`--global` | `-g`
+`--save` | `-S`
+`--save-dev` | `-D`
+
+## Module Bundlers
+
+- Webpack
+- Require.js
+- Browserify
+- Gulp
+- Grunt
+- 
 
 ## Sources
 
 [Absolute Beginner's Guide to Using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
+[npm for Beginners: A Guide for Front-end Developers](https://www.impressivewebs.com/npm-for-beginners-a-guide-for-front-end-developers/)
 [What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
