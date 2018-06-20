@@ -1,13 +1,15 @@
 ## To Learn
 
-- **JSON**
-- _npm_
-- AJAX
-- AngularJS
+- _JSON_
 - _Bootstrap_
+- _npm_
+  - _npm module bundlers_
+- RequireJS
 - TypeScript
-- ReactJS
+- AngularJS
 - Node.js
+- AJAX
+- ReactJS
 - MySQL
 
 ## Vocab 
