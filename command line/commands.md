@@ -5,6 +5,8 @@ Command Name | Description
 `pwd`|print working directory
 `mkdir`|make directory
 `cd`|change directory
+`cd ~` | return to home directory (also works with just `cd`)
+`cd -` | go to previous directory
 `ls`|list directory
 `rmdir`|remove directory
 `pushd`|push directory
@@ -31,9 +33,23 @@ Command Name | Description
 
 Option Name | Description
 --|--
+`-a` | `ls -a` list files that start with a perioud (hidden)
 `-l` | Long
 `-r`| ??
 `-rf`| ??
+
+
+Shortcut | Description
+--|--
+Up arrow, then down arrow | Fill previous command, then clear that command
+Highlight text, middle click | Copy and paste text
+
+Directory | Description
+--|--
+`/usr/bin` | Where most programs are installed (leading slash represents root directory)
+
+## Other useful things to know
+`.` refers to the working directory. e.g. `cd ./Downloads` (though `cd /Downloads` is the same - no path means working directory will be assumed)
 
 ## Vocabulary
 - **Shell**
@@ -45,6 +61,7 @@ Option Name | Description
 - **Folder = Directory**
 - **Session**
   - Do not type in the `$` (Unix) or `>` (Windows). That's just showing the **session**
+  - `#` means you are operating as the _superuser_
 - **Prompt**
   - You can see an output followed by another `$` or `>` **prompt**. That content is the output.
   - This is the beginning of the command line. It usually provides some contextual information like who you are, where you are and other useful info. It typically ends in a $ . After the prompt is where you will be typing commands.
