@@ -37,6 +37,7 @@
 ## Resources
 
 - [Git & Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+- [Learning the shell](http://linuxcommand.org/lc3_lts0030.php)
 - [LearnPythonTheHardWay](https://learnpythonthehardway.org/book/appendix-a-cli/introduction.html)  
 - [Intro to Mac OS X Command Line - treehouse](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line)
 - [Codecademy: List of Command Line Commands](https://www.codecademy.com/articles/command-line-commands)
