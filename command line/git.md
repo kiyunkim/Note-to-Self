@@ -5,6 +5,7 @@
 
 - `git status`: see what state files are in
 - `git status -s`: short version of `git status`
+- `git log`
 
 ![git lifecycle status][status-lifecycle]
 
