@@ -16,7 +16,8 @@ General notes for myself.
 
   - [Commands](https://github.com/kiyunkim/notes/blob/master/command%20line/commands.md)
   - [Exercises](https://github.com/kiyunkim/notes/blob/master/command%20line/exercises.md)
-  - [Resources](https://github.com/kiyunkim/notes/blob/master/command%20line/resources.md)
+  - [General](https://github.com/kiyunkim/notes/blob/master/command%20line/general.md)
+  - [Git](https://github.com/kiyunkim/notes/blob/master/command%20line/git.md)
 </details>
 <details>
   <summary>CSS</summary>
