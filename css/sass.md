@@ -48,6 +48,15 @@ nav {
 }
 ```
 
+#### SASS Data types
+- Numbers (`1`, `13px`)
+- Strings with and without quotes
+- colors
+- Booleans
+- Nulls
+- List of values
+- Maps from one value to another
+
 ### Operations
 
 ```sass
