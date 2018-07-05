@@ -45,17 +45,21 @@ Flag | Shortcut
 `--save` | `-S`
 `--save-dev` | `-D`
 
-## Module Bundlers
+## Build Tools (Module bundlers, task runners/automator)
 
 - Webpack
-- Require.js
 - Browserify
+- Require.js
 - Gulp
 - Grunt
-- 
+- Babel
 
 ## Sources
 
-[Absolute Beginner's Guide to Using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
-[npm for Beginners: A Guide for Front-end Developers](https://www.impressivewebs.com/npm-for-beginners-a-guide-for-front-end-developers/)
-[What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
+- [Absolute Beginner's Guide to Using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
+- [npm for Beginners: A Guide for Front-end Developers](https://www.impressivewebs.com/npm-for-beginners-a-guide-for-front-end-developers/)
+- [What is npm?](https://docs.npmjs.com/getting-started/what-is-npm)
+- [freeCodeCamp Front End Build Tools](https://medium.freecodecamp.org/making-sense-of-front-end-build-tools-3a1b3a87043b)
+- [Build Tools Rule of Thumb](http://dearkumar.com/confusion-on-js-build-tool-babel-browserify-webpack-grunt-and-gulp-when-to-use-them/)
+- [Build Tool comparison](https://survivejs.com/webpack/appendices/comparison/)
+- [npm trends](http://www.npmtrends.com/)
