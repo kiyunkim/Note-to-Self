@@ -134,6 +134,26 @@ function newFunction(parameter) {
 newFunction(argument);
 ```
 
+#### Function Declaration and Function Operator
+
+```js
+// function declaration
+function myfunction() {
+  // ..
+};
+
+myFunction();
+```
+
+```js
+// function operator (anonymous function)
+var myFunction = function() {
+  // ..
+};
+
+myFunction();
+```
+
 ## Arrays 
 
 ```js
