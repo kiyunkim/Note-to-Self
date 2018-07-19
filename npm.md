@@ -23,7 +23,7 @@
 `npm install <module>` install the module `<module>`  
 `npm install` install all dependencies from `package.json`  
 `npm i` shorthand for install  
-`npm install <module> --save` install `<module>` and save to `package.json`as an entry in `dependencies` **This is now the default in npm 5+**
+`npm install <module> --save` install `<module>` and save to `package.json`as an entry in `dependencies` **This is now the default in npm 5+**  
 `npm install <module> --save-dev` install `<module>` and save to `package.json`as an entry in `devDependencies`  
 `npm install <module> --global` install globally (by default it will install them to a system directory and not a local one)
 `npm outated` view version details of outdated dependencies
