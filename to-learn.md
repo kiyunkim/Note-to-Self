@@ -5,6 +5,7 @@
 - _npm_
   - _npm module bundlers_
 - RequireJS
+- underscorejs
 - TypeScript
 - AngularJS
 - Node.js
