@@ -134,24 +134,32 @@ function newFunction(parameter) {
 newFunction(argument);
 ```
 
-#### Function Declaration and Function Operator
+- Ways of declaring functions:
+  1. Function Declaration
+  2. Function Expression (anonymous or named)
+- What's the difference? 
+  - Functions declarations load before any code is executed, vs function expressions only load only when the interpreter reaches that line of code where it is declared
+
+#### Function Declaration
 
 ```js
+myFunction();
+
 // function declaration
 function myfunction() {
   // ..
 };
-
-myFunction();
 ```
 
+#### Function Expression
+
 ```js
+myFunction(); // error! myFunction is not a function
+
 // function operator (anonymous function)
 var myFunction = function() {
   // ..
 };
-
-myFunction();
 ```
 
 ## Arrays 
