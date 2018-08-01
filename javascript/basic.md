@@ -44,29 +44,30 @@ The expression `2 + "2"` returns `"22"` -- it is concatenating the two values an
 
 ## Variables 
 
-- Variables allow us to store a reference to a value to be referred to later. When we create a new variable, we are **declaring** it, which means our code now recognizes it as a 'thing.' 
-- Variables cannot start with a number, contain spaces or punctuation marks (except `_` or `$`), or use a word that is already reserved for something else.
-- Use special keyword `var` to name the variable (use CAML case), and then assign the variable a value.
+- Variable names cannot start with a number, contain spaces or punctuation marks (except `_` or `$`), or use a word that is already reserved for something else.
+- Use special keyword `var` to name the variable (use camel case), and then assign the variable a value.
 
-**Keywords and Reserved words**: `break, case, catch, continue, debugger, default, delete, do, else, false, finally, for, function, if, implements, in, instanceof, interface, let, new, null, package, private, protected, public, return, static, switch, this, throw, true, try, typeof, var, void, while, with, yield`
+**Keywords and Reserved words**:   
+`break, case, catch, continue, debugger, default, delete, do, false, finally, implements, in, instanceof, interface, let, new, package, private, protected, public, return, static, switch, this, throw, try, typeof, void, while, with, yield`
 
 ## Control Flow
 
+### If/Else
+
 - Using **control flow** allows us to run code only under certain conditions
 - Uses code in a non-linear fashion
+- If/Else statements = one of the most common types of control flow. 
+  - Allow us to run code only **if** a certain condition is first met & to do something **else** if that condition is not met.
 
-#### If/Else
-- If/Else statements are one of the most common types of control flow. They allow us to run code only **if** a certain condition is first met, and we can tell our code to do something **else** if that condition is not met.
 
-
-#### Switch
+### Switch
 ```javascript
 switch (expressionOrArgument) {
   case exampleOne:
-    // if expressionOrArgument === exampleOne, this code will run
+    console.log('expressionOrArgument === exampleOne');
     break;
   case exampleTwo:
-    // if expressionOrArgument === exampleTwo, this code will run
+    console.log('expressionOrArgument === exampleTwo');
     break;
   default:
     // this code will run if no cases are met
@@ -74,7 +75,7 @@ switch (expressionOrArgument) {
 }
 ```
 
-### Loop
+### Loops
 
 #### For Loops
 - Loops through a block of code until an original condition is no longer true
@@ -179,6 +180,6 @@ function loopLanguages() {
 - Small details are important especially when other people will be reading and working with the code
 - One way to help write code in a standard way is to use a **linting tool** like JSLint.
 
-## Questions for Later
+##### Questions for Later
 
 - Vocab: Parameter, argument, expression, namespacing
