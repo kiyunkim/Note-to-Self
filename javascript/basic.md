@@ -1,36 +1,32 @@
 # Javascript
 
-- Developed by Netscape to create products and applications that run in the browser
-- Primarily client side, does not have to run through a server (like PHP or .NET) to work - only needs the browser in order to run
-- Fully featured language but originally designed as a **scripting language** (language used to communicate with an existing application)
+- Primarily client side, does not have to run through a server (like PHP or .NET does) to work - only needs the browser in order to run
 
-### General Notes, Vocab
+#### General Notes, Vocab
 
 - Modulo symbol `%`
 - `true` = `1`  
   `false` = `0`
-- function/method
-- parameter/argument
 - `'use strict'` statement: forces a strict method of linting 
 
-#### Notable Words
-- Scope
-- Key/value
-- Parameter
-- *Namespacing*
-
-### Code reference
+#### Code reference
 
 ```javascript
 prompt("Enter your name", "Enter Name"); // returns what is typed into the input
 confirm("Are you sure you want to quit?"); // 'ok' returns true, 'cancel' returns false
 
-console.log("hello world");
 console.warn('warning!'); 
 console.error('error!');
 
-Math.random(); // generates random number between 0 and 1
-Math.round(); // round to a whole number
+Math.round(); // return nearest integer
+Math.ceil(); // return nearest integer rounded UP
+Math.floor(); // return nearest integer rounded DOWN
+
+Math.abs(); // return absolute value
+Math.pow(x, y); // return value of x to the power of y
+
+Math.min(a,b,c,d,e); // return lowest value in a list of arguments
+Math.max(f,g,h,i,j); // return highest value in a list of arguments
 ```
 
 ## Primitive Data Types
@@ -188,3 +184,7 @@ function loopLanguages() {
 
 - Small details are important especially when other people will be reading and working with the code
 - One way to help write code in a standard way is to use a **linting tool** like JSLint.
+
+## Questions for Later
+
+- Vocab: Parameter, argument, expression, namespacing
