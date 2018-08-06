@@ -1,13 +1,16 @@
 # Objects
 
-An **object** is a collection of **properties**, which are described in the form of **key/value** pairs. In other words, key/value pairs make up a property name and its value, which is assigned to an object. We can use objects to model "things" using code.
+An **object** is a collection of **properties**, which are described in the form of **key/value** pairs.
 
 Three main types of objects:
-1. **Host objects** - objects defined by the environment in which your code is run. E.g. a web browser is a host environment that have the defined objects: `document`, `window`, `console`, etc
-2. **Core objects** - objects defined by and built into the js language. E.g. `Math`, `Date`, `Number`
+1. **Host objects** - objects defined by the environment in which your code is run. 
+  E.g. a web browser is a host env that have the defined objects: `document`, `window`, `console`, etc
+2. **Core objects** - objects defined by and built into the js language. 
+E.g. `Math`, `Date`, `Number`
 3. Everything else - objects defined by code's author, or objects defined by js libraries
 
-Quick links:
+Content:
+
 - [Creating Objects](#creatingobj)
   - [Object literals](#objliteral)
   - [Object constructors](#objconstrct)
@@ -29,6 +32,8 @@ Step-by-step instructions read from top to bottom | Objects pass code back and f
 
 ### <a name="objliteral"></a> Object Literal 
 
+Object  literals **create and define** an object at the same time; creating an **instance** of an object.
+
 ```js
 // OBJECT LITERAL NOTATION
 var myObject = {
@@ -41,9 +46,8 @@ var myCoffee = {
   temperature: "hot",
   milk: true,
   sugar: 3
-  };
+};
 ```
-Objer literals create and define an object at the same time; creating an **instance** of an object.
 
 ### Methods
 
@@ -72,9 +76,10 @@ myCoffee.reheat();
 reheat(); // won't work because it's a method and requires and object it is associated to
 ```
 
-### <a name="objconstrct"></a> Object Constructor `new`
+### <a name="objconstrct"></a> Object Constructor
 
 - Defines a template for an object, also known as a **prototype**.
+  - A blue print for creating many objects of the same 'type'
 - Function used to create **multiple instances** of an object
   - Best practice to name the function with the first letter capitalized
   - Each instance inherits the properties and methods of its constructor
@@ -87,10 +92,20 @@ function Friend(name, tshirtColor) {
 
 // create an instance of the constructor
 var joe = new Friend("Joe", "red");
+var mitch = new Friend("Mitch", "black");
+```
+#### Built-in JavaScript Constructors
 
+```js
+var theDate = new Date(); // new Date object
+var myObject = new Object(); // var myObject = {};
 ```
 
-#### `Object.create()`
+- To add new properties and methods to a constructor, you have to add it in the constructor function
+- Or.. add it to its prototype!
+
+
+## `Object.create()`
 
 - What's used behind the scenes for object literals and constructors
 
