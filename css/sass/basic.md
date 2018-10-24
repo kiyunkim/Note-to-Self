@@ -1,29 +1,8 @@
 ## SASS
 - Dynamic Style Sheet Language
-  - "Syntactically Awesome StyleSheets"
-- Introduces programming features
 - Has 2 syntaxes: SASS and SCSS
-  - SASS was based on indention but CSS wasn't valid SASS
-    ```sass
-    $baseFontSize: 14px
-    
-    #container
-      h1
-        font-size: $baseFontSize
-    ```
-    
+  - SASS was based on indention but CSS wasn't valid SASS (no curly braces, colons)
   - SCSS is more common, and looks & feels more like CSS
-    ```sass
-    $baseFontSize: 14px;
-    
-    #container {
-      h2 {
-        font-size: $basefontSize;
-      }
-    }
-    ```
-    
-### SASS on the Server
 - Support for Server-Side
   - Node.js
   - ASP.NET iva Plugin (e.g. Chirpy)
@@ -32,8 +11,6 @@
 ### Variables
 - Variables can be scoped globally or locally
 ```sass
-$myColor: #ffeedd;
-
 $color: black;
 $unit: 4px; // or 1em or 50%
 $list: arial, sans-serif;
@@ -51,24 +28,23 @@ nav {
 #### SASS Data types
 - Numbers (`1`, `13px`)
 - Strings with and without quotes
-- colors
+- Colors
 - Booleans
 - Nulls
 - List of values
 - Maps from one value to another
 
 ### Operations
-
 ```sass
 font-size: 4px + 4;  // add 8px
 font-size: 14px * 2; // multiply  
 color: #fff / 4;  // divide #404040;
 width: (100% / 2 ) + 25%; // use order of operations 75%
 ```
+
 ### Color Functions
 
 ```sass
-// $color does NOT have to be numeric
 color: lighten($color, 10%);
 color: darken($color, 10%);
 color: saturate($color, 10%);
@@ -93,7 +69,7 @@ $rndUp: ceil(3.14);   // round up to nearest whole number
 $rndDwn: floor(3.14); // round down to nearest whole number
 $percnt: percentage(.14);  // get percentage
 ```
-[Even more functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
+[More functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 
 ### String interpolation
 - Use pound `#` with the variable in curly braces to input string value of the variable
@@ -118,30 +94,6 @@ body {
 }
 ```
 ### Rules
-
-- Allows structuring in a logical way
-
-#### Nesting of hierarchies that will be processed into CSS
-```sass
-nav {
-  font-size: 14px;
-  ul {
-    list-style-type: none;
-    li { // nav ul li
-      display: inline-block;
-    }
-  }
-}
-```
-#### Uses parent selector combinator `&` to mix with parent
-```sass
-a {
-  text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
-}
-```
 
 #### Nest properties
 ```sass 
