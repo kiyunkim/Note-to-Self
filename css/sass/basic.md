@@ -57,7 +57,7 @@ color: invert($color);
 color: complement($color);
 ```
 
-### More Functions
+### [More Functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
 ```sass
 $quoted: quote($sometext);
 $unquoted: unquote($sometext); // remove quotes from variables or other pieces of text in the CSS
@@ -69,7 +69,7 @@ $rndUp: ceil(3.14);   // round up to nearest whole number
 $rndDwn: floor(3.14); // round down to nearest whole number
 $percnt: percentage(.14);  // get percentage
 ```
-[More functions](http://sass-lang.com/documentation/Sass/Script/Functions.html)
+
 
 ### String interpolation
 - Use pound `#` with the variable in curly braces to input string value of the variable
