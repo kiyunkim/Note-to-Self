@@ -32,4 +32,42 @@ f.prototype.c = 4;
 
 ```
 
+
+
+Use `new` to create a new instance
+
+```js
+// this is the constructor
+function Bear(type) {
+  this.type = type;
+}
+
+
+Bear.growl = function() {
+  // only adds to the Bear object, NOT the instances
+  return 'grrrr';
+}
+// add also to the instances: add to the prototype
+Bear.prototype.growl = function(){
+  console.log(this.type + ' bear says GRRR')
+}
+
+var grizzly = new Bear('grizzly');
+var polar = new Bear('polar');
+
+function Grizzly() {
+
+
+}
+// inherit Bear
+// making it equal Bear.prototype won't create a new object
+// so create a new object that is based off of Bear
+Grizzly.prototype = Object.create(Bear.prototype);
+// everything in the Bear prototype, is applied to Grizzly prototype
+
+var grizzly = new Grizzly()
+
+
+```
+
 [MDN "Inheritance and the Prototype Chain"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
