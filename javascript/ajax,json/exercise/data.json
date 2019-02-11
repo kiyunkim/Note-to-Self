@@ -1,17 +1,4 @@
 {
-  "hi": "test",
-  "kiyun": {
-    "name": "kiyun",
-    "age": 23
-  },
-
-  "ppl": [
-    {
-      "name":"bob",
-      "age": 33
-    },
-    "john",
-    "liz",
-    "joyce"
-  ]
+  "first": "John",
+  "last": "Doe"
 }
