@@ -44,3 +44,16 @@ xhr.onload = function() {
 
 // send method - 'activates' the open
 xhr.send();
+
+
+
+// above in jquery:
+$.ajax({
+  type: 'GET',
+  url: 'data.json',
+  async: true,
+  dataType: 'json',
+  success: function(data){
+    console.log(data);
+  }
+ });
