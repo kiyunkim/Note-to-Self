@@ -2,19 +2,19 @@
 
 Command Name | Description
 ---------- | -----------
-`pwd`|print working directory
-`mkdir`|make directory
-`cd`|change directory
-`cd ~` | return to home directory (also works with just `cd`)
-`cd -` | go to previous directory
-`ls`|list directory
-`rmdir`|remove directory
-`pushd`|push directory
-`popd`|pop directory
-`cp`|copy a file or directory
-`mv`|move (or rename) a file or directory
-`hostname`|my computer network name
-`touch` | create empty file
+`pwd`      | print working directory
+`mkdir`    | make directory
+`cd`       | change directory
+`cd ~`     | return to home directory (also works with just `cd`)
+`cd -`     | go to previous directory
+`ls`       | list directory
+`rmdir`    | remove directory
+`pushd`    | push directory
+`popd`     | pop directory
+`cp`       | copy a file or directory
+`mv`       | move (or rename) a file or directory
+`hostname` | my computer network name
+`touch`    | create empty file
 `less`|page through a file
 `cat`|print the whole file
 `rm` | remove file
