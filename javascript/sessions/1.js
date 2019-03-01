@@ -95,11 +95,14 @@ var x = 2;
 // x = 2 here
 // ------
 
+// has to be declared when set
 // nope:
 const x;
 x = 1;
 // yep:
 const x = 1;
+// yep:
+const x = {};
 // ------
 
 // constant reference to a value. not a constant value
@@ -183,3 +186,4 @@ console.log(a); // [2,2,3]
 
 // how to make it so a = [1,2,3] ?
 // prototype?
+// https://stackoverflow.com/questions/7574054/javascript-how-to-pass-object-by-value
