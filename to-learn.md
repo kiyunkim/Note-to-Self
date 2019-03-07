@@ -1,18 +1,13 @@
 ## To Learn
 
-- _JSON_
-- _Bootstrap_
 - _npm_
-  - _npm module bundlers_
-- RequireJS
-- underscorejs
+  - _webpack_
+
+- jekyll
+
 - TypeScript
-- AngularJS
-- Node.js
-- AJAX
-- ReactJS
+- angular
+- react
+
 - MySQL
-
-## Vocab 
-
-- API
+- ASP.NET
