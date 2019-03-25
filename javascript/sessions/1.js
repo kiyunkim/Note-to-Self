@@ -5,18 +5,21 @@ var str = new String('string');
 /* ------------------------------------------------ */
 // `let` vs `var`
 
+// -------------------------
 // var does NOT have block scope
-{ // var in a block
+{ 
+  // var in a block
   var x = 2;
 }
 // x can be used here
-// ------
+// -------------------------
 
-{ // let in a block
+{ 
+  // let in a block
   let x = 2;
 }
 // x cannot be used here
-// ------
+// -------------------------
 
 // var can be redeclared
 var x = 10;
@@ -26,8 +29,9 @@ var x = 10;
   // x = 2 
 }
 // x = 2
-// ------
+// -------------------------
 
+// redeclaring let in same scope or block is not allowed
 var x = 10;
 // x = 10
 {
@@ -35,11 +39,11 @@ var x = 10;
   // x = 2
 }
 // x = 10
-// ------
+// -------------------------
 
 var x = 10;
 let x = 2; // not allowed - in the same block
-// ------
+// -------------------------
 
 // redeclaring let in same scope or block is not allowed
 let x = 2;
@@ -47,29 +51,29 @@ let x = 2;
   let x = 4; // allowed
   let x = 5; // not allowed
 }
-// ------
+// -------------------------
 
 // loops
 var i = 1;
-for (var i = 0; i < 5; i++) {
+for (var i = 0; i < 10; i++) {
   // ..
 }
 // i = 10
-// ------
+// -------------------------
 
 let i = 5;
 for (let i = 0; i < 10; i++) {
   // ..
 }
 // i = 5
-// ------
+// -------------------------
 
 // global variable
 var car = 'bmw';
 // can use window.car
 let car = 'kia';
 // can't use window.car
-// ------
+// -------------------------
 
 // hoisting
 // can use car here
