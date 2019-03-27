@@ -15,9 +15,9 @@ console.log(a); // [2,2,3]
 
 // https://stackoverflow.com/questions/7574054/javascript-how-to-pass-object-by-value
 function test(b){
-  b = Object.create(b);
-  b[0] = 2;
-  return b;
+  c = Object.create(b); // c prototype points to b
+  c[0] = 2;
+  return c;
 }
 
 /* ---------------------------------- */
