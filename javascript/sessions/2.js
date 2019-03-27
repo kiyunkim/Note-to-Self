@@ -47,89 +47,62 @@ class Person {
 }
 var fred = new Person("Fred");
 
-//factory pattern
-function car(name, model) {
-
-}
-
-/* ---------------------------------- */
-/* bind/apply/call
-/* ---------------------------------- */
-
-// bind() .. bind `this` object to the function
-
-
 
 /* ---------------------------------- */
 /* Prototype
 /* ---------------------------------- */
 
-// __proto__ is a method in chrome
-// prototype points to object
-
-// prototype = property of object
-
-function Letter(){
-  this.language = 'english';
-}
-var a = new Letter();
-var b = Object.create(Letter.prototype);
-var c = Object.create();
-
-
-
-var a = {a: 'b'};
-
-// a object
-// a object proto points to Object()
-// Object() proto points to null
-
-var animal = {life: 1};
-
-var cat = Object.create(animal);
-
-
 // constructor function
 // has `prototype` property, not `__proto__`
-function Animal() {
+function Animal(){
   this.life = 1;
 }
+// a.__proto__ === Animal.prototype
+var a = new Animal(); // a.life = 1
+var b = Object.create(Animal); // does not work - Object.create() only can pass in objects, not functions
+var c = Object.create(a); // c.life = 1
 
-var cat = new Animal();
-// cat.__proto__ === Animal.prototype;
 
 
-function Animal(){
-  this.life = 1
-};
 function Cat() {
   this.leg = 4
 }
-Cat.prototype = Object.create(Animal.prototype)
-
+Cat.prototype = Object.create(Animal.prototype); // Cat.prototype and Animal.prototype point to the same object
+var cat = new Cat();
 
 Animal.prototype.speak = function () {
-  console.log("haha");
+  console.log("Hello");
 }
 
-
-cat.speak()
-
+cat.speak(); // Hello
 
 /* ---------------------------------- */
-/* Class
+/* Classes
 /* ---------------------------------- */
 
 class Person {
   constructor(name) {
     this.name = name;
   }
+  greet() {
+    console.log(`${this.name} says hello`);
+  }
 }
-class worker extends Person {
+// make subclass of `Person` and call it Worker
+class Worker extends Person { 
+  // use `super` to call the parent class
   constructor (name) {
     super(name);
   }
+  do() {
+    console.log(`${this.name} is working`);
+  }
+  clockin() {
+    super.greet();
+    this.do();
+  }
 }
-worker.name
-var fred = new Person("Fred");
-
+var fred = new Worker("Fred");
+fred.clockin(); 
+// Fred says hello
+// Fred is working
