@@ -1,0 +1,5 @@
+- launch voiceover: `command` + `F5`
+- navigate by landmark (web roader): `control` + `option` + `U`
+- navigate headings: `control` + `option` + `command` + `H`
+  - reverse: `shift` + `control` + `option` + `command` + `H`
+- 
