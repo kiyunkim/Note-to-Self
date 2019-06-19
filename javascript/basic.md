@@ -114,6 +114,20 @@ while(i < 11) {
 
 - Useful when you don't know how many times you need the loop to run
 
+
+#### For..in vs For..of Loops
+
+                 | `for..in` | `for..of`
+---------------- | --------- |  -------
+applies to:      | enumerable properties|iterable collections
+use with objects?|yes|no
+use with arrays? |possible but not recommended|yes
+use with strings?|possible but not recommended|yes
+
+**TL;DR:** use `for..in` for object properties, `for..of` for array values
+
+[source](https://bitsofco.de/for-in-vs-for-of/)
+
 ## Functions
 
 ```js
